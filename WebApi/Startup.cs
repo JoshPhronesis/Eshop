@@ -39,7 +39,10 @@ namespace WebApi
 			services.AddAutoMapper(typeof(Startup));
 			services.AddScoped(typeof(IRepository<,>), typeof(Repository<,>));
 			services.AddScoped<IProductService, ProductService>();
-			services.AddDbContext<DataContext>(c => c.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+			services.AddDbContext<DataContext>(options => 
+			{
+				options.UseSqlite(Configuration.GetConnectionString("DefaultConnection"), x => x.MigrationsAssembly("Infrastructure"));
+			});
 			services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 		}
 
@@ -55,6 +58,12 @@ namespace WebApi
 				// The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
 				app.UseHsts();
 			}
+
+			app.UseSwagger();
+			app.UseSwaggerUI(c =>
+			{
+				c.SwaggerEndpoint("/swagger/v1/swagger.json", "Eshop service API V1");
+			});
 
 			app.UseHttpsRedirection();
 			app.UseMvc();

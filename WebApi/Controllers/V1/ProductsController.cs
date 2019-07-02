@@ -11,7 +11,7 @@ using WebApi.DTOs;
 namespace WebApi.Controllers
 {
 	[ApiController]
-	[Route("api/[controller]")]
+	[Route("api/v1/[controller]")]
     public class ProductsController : ControllerBase
     {
 		private readonly IMapper mapper;

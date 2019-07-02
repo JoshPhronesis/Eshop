@@ -1,0 +1,98 @@
+[
+  {
+    "Name": "Xbox",
+    "ImageUri": "http://lorempixel.com/g/400/200",
+    "Price": "1000,00",
+    "Description": "Ex adipisicing ullamco eiusmod commodo laborum. Ut pariatur minim tempor pariatur cillum ipsum. Consequat dolor ullamco incididunt est pariatur elit officia incididunt enim quis magna eu ut pariatur.\r\n"
+  },
+  {
+    "Name": "IPhone",
+    "ImageUri": "http://lorempixel.com/g/400/200",
+    "Price": "2500,00",
+    "Description": "Ex adipisicing ullamco eiusmod commodo laborum. Ut pariatur minim tempor pariatur cillum ipsum. Consequat dolor ullamco incididunt est pariatur elit officia incididunt enim quis magna eu ut pariatur.\r\n"
+  },
+  {
+    "Name": "Pencil",
+    "ImageUri": "http://lorempixel.com/g/400/200",
+    "Price": "4000,00",
+    "Description": "Ex adipisicing ullamco eiusmod commodo laborum. Ut pariatur minim tempor pariatur cillum ipsum. Consequat dolor ullamco incididunt est pariatur elit officia incididunt enim quis magna eu ut pariatur.\r\n"
+  },
+  {
+    "Name": "Cup",
+    "ImageUri": "http://lorempixel.com/g/400/200",
+    "Price": "2500,00",
+    "Description": "Ex adipisicing ullamco eiusmod commodo laborum. Ut pariatur minim tempor pariatur cillum ipsum. Consequat dolor ullamco incididunt est pariatur elit officia incididunt enim quis magna eu ut pariatur.\r\n"
+  },
+  {
+    "Name": "Pencil",
+    "ImageUri": "http://lorempixel.com/g/400/200",
+    "Price": "4000,00",
+    "Description": "Ex adipisicing ullamco eiusmod commodo laborum. Ut pariatur minim tempor pariatur cillum ipsum. Consequat dolor ullamco incididunt est pariatur elit officia incididunt enim quis magna eu ut pariatur.\r\n"
+  },
+  {
+    "Name": "Bottle Water",
+    "ImageUri": "http://lorempixel.com/g/400/200",
+    "Price": "100,00",
+    "Description": "Ex adipisicing ullamco eiusmod commodo laborum. Ut pariatur minim tempor pariatur cillum ipsum. Consequat dolor ullamco incididunt est pariatur elit officia incididunt enim quis magna eu ut pariatur.\r\n"
+  },
+  {
+    "Name": "Tesla",
+    "ImageUri": "http://lorempixel.com/g/400/200",
+    "Price": "4000,00",
+    "Description": "Ex adipisicing ullamco eiusmod commodo laborum. Ut pariatur minim tempor pariatur cillum ipsum. Consequat dolor ullamco incididunt est pariatur elit officia incididunt enim quis magna eu ut pariatur.\r\n"
+  },
+  {
+    "Name": "Samsung",
+    "ImageUri": "http://lorempixel.com/g/400/200",
+    "Price": "10000,00",
+    "Description": "Ex adipisicing ullamco eiusmod commodo laborum. Ut pariatur minim tempor pariatur cillum ipsum. Consequat dolor ullamco incididunt est pariatur elit officia incididunt enim quis magna eu ut pariatur.\r\n"
+  },
+  {
+    "Name": "Xbox",
+    "ImageUri": "http://lorempixel.com/g/400/200",
+    "Price": "100,00",
+    "Description": "Ex adipisicing ullamco eiusmod commodo laborum. Ut pariatur minim tempor pariatur cillum ipsum. Consequat dolor ullamco incididunt est pariatur elit officia incididunt enim quis magna eu ut pariatur.\r\n"
+  },
+  {
+    "Name": "IPhone",
+    "ImageUri": "http://lorempixel.com/g/400/200",
+    "Price": "2500,00",
+    "Description": "Ex adipisicing ullamco eiusmod commodo laborum. Ut pariatur minim tempor pariatur cillum ipsum. Consequat dolor ullamco incididunt est pariatur elit officia incididunt enim quis magna eu ut pariatur.\r\n"
+  },
+  {
+    "Name": "Pencil",
+    "ImageUri": "http://lorempixel.com/g/400/200",
+    "Price": "4000,00",
+    "Description": "Ex adipisicing ullamco eiusmod commodo laborum. Ut pariatur minim tempor pariatur cillum ipsum. Consequat dolor ullamco incididunt est pariatur elit officia incididunt enim quis magna eu ut pariatur.\r\n"
+  },
+  {
+    "Name": "Cup",
+    "ImageUri": "http://lorempixel.com/g/400/200",
+    "Price": "2500,00",
+    "Description": "Ex adipisicing ullamco eiusmod commodo laborum. Ut pariatur minim tempor pariatur cillum ipsum. Consequat dolor ullamco incididunt est pariatur elit officia incididunt enim quis magna eu ut pariatur.\r\n"
+  },
+  {
+    "Name": "Pencil",
+    "ImageUri": "http://lorempixel.com/g/400/200",
+    "Price": "4000,00",
+    "Description": "Ex adipisicing ullamco eiusmod commodo laborum. Ut pariatur minim tempor pariatur cillum ipsum. Consequat dolor ullamco incididunt est pariatur elit officia incididunt enim quis magna eu ut pariatur.\r\n"
+  },
+  {
+    "Name": "Bottle Water",
+    "ImageUri": "http://lorempixel.com/g/400/200",
+    "Price": "100,00",
+    "Description": "Ex adipisicing ullamco eiusmod commodo laborum. Ut pariatur minim tempor pariatur cillum ipsum. Consequat dolor ullamco incididunt est pariatur elit officia incididunt enim quis magna eu ut pariatur.\r\n"
+  },
+  {
+    "Name": "Tesla",
+    "ImageUri": "http://lorempixel.com/g/400/200",
+    "Price": "4000,00",
+    "Description": "Ex adipisicing ullamco eiusmod commodo laborum. Ut pariatur minim tempor pariatur cillum ipsum. Consequat dolor ullamco incididunt est pariatur elit officia incididunt enim quis magna eu ut pariatur.\r\n"
+  },
+  {
+    "Name": "Samsung",
+    "ImageUri": "http://lorempixel.com/g/400/200",
+    "Price": "10000,00",
+    "Description": "Ex adipisicing ullamco eiusmod commodo laborum. Ut pariatur minim tempor pariatur cillum ipsum. Consequat dolor ullamco incididunt est pariatur elit officia incididunt enim quis magna eu ut pariatur.\r\n"
+  }
+]

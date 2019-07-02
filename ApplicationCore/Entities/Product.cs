@@ -20,3 +20,4 @@ namespace ApplicationCore.Entities
 		public string Description { get; set; }
 	}
 }
+
