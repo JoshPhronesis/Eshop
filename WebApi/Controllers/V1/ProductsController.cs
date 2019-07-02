@@ -14,20 +14,20 @@ namespace WebApi.Controllers
 	[Route("api/[controller]")]
     public class ProductsController : ControllerBase
     {
-		private readonly IRepository<Product, int> repository;
 		private readonly IMapper mapper;
+		private readonly IProductService productService;
 
-		public ProductsController(IRepository<Product,int> repository, IMapper mapper)
+		public ProductsController(IMapper mapper, IProductService productService)
 		{
-			this.repository = repository;
 			this.mapper = mapper;
+			this.productService = productService;
 		}
 
 		[HttpGet]
         public async Task<IActionResult> Products()
         {
-			var products = await repository.GetAllAsync();
-			var productsDto = mapper.Map<List<ProductToReturnDto>>(products);
+			var products = await productService.GetProductsAsync();
+			var productsDto = mapper.Map<List<ProductDto>>(products);
 			return Ok(productsDto);
 		}
 
@@ -39,32 +39,32 @@ namespace WebApi.Controllers
 				return BadRequest();
 			}
 
-			var product = await repository.GetByIdAsync(productId);
-			var productDto = mapper.Map<ProductToReturnDto>(product);
+			var product = await productService.GetProductAsync(productId);
+			var productDto = mapper.Map<ProductDto>(product);
 
 			return Ok(productDto);
 		}
 
 		[HttpPost]
-		public async Task<IActionResult> Create(ProductToReturnDto productDto)
+		public async Task<IActionResult> Create(ProductDto productDto)
 		{
 			var product = mapper.Map<Product>(productDto);
-			var prod = await repository.AddAsync(product);
+			var prod = await productService.AddProductAsync(product);
 
 			return CreatedAtAction("GetProduct", new { id = prod.Id }, productDto);
 		}
 
 		[HttpPut("{id}")]
-		public async Task<IActionResult> Update(int id, [FromBody]ProductToReturnDto product)
+		public async Task<IActionResult> Update(int id, [FromBody]ProductDto product)
 		{
-			var productFromRepo = await repository.GetByIdAsync(id);
+			var productFromRepo = await productService.GetProductAsync(id);
 			if (productFromRepo  == null)
 			{
 				return BadRequest();
 			}
 
 			var productFromDto = mapper.Map<Product>(product);
-			await repository.UpdateAsync(productFromDto);
+			await productService.UpdateProductAsync(productFromDto);
 
 			return CreatedAtAction("GetProduct", new { id = productFromRepo.Id }, productFromDto);
 		}

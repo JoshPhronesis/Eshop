@@ -1,15 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using ApplicationCore.Interfaces;
+using ApplicationCore.Services;
+using Infrastructure.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
+using AutoMapper;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace WebApi
 {
@@ -25,6 +24,22 @@ namespace WebApi
 		// This method gets called by the runtime. Use this method to add services to the container.
 		public void ConfigureServices(IServiceCollection services)
 		{
+			services.AddSwaggerGen(options =>
+			{
+				options.DescribeAllEnumsAsStrings();
+				options.SwaggerDoc("v1", new Info()
+				{
+					Title = "Eshop API",
+					Version = "v1",
+					Description = "Eshop service HTTP API",
+					TermsOfService = "Terms Of Service"
+				});
+			});
+
+			services.AddAutoMapper(typeof(Startup));
+			services.AddScoped(typeof(IRepository<,>), typeof(Repository<,>));
+			services.AddScoped<IProductService, ProductService>();
+			services.AddDbContext<DataContext>(c => c.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 			services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 		}
 

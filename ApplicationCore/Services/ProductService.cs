@@ -17,9 +17,9 @@ namespace ApplicationCore.Services
 			this.repo = repository;
 		}
 
-		public async Task AddProductAsync(Product product)
+		public async Task<Product> AddProductAsync(Product product)
 		{
-			await repo.AddAsync(product);
+			return await repo.AddAsync(product);
 		}
 
 		public async Task DeleteProductAsync(int id)
@@ -43,12 +43,11 @@ namespace ApplicationCore.Services
 			return await repo.GetAllAsync();
 		}
 
-		public async Task UpdateProductAsync(int productId)
+		public async Task UpdateProductAsync(Product product)
 		{
-			var product = await repo.GetByIdAsync(productId);
 			if (product == null)
 			{
-				throw new ProductNotFoundException(productId);
+				throw new ProductNotFoundException("Product cannot be null");
 			}
 
 			await repo.UpdateAsync(product);
