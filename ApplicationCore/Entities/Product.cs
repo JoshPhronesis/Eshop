@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ApplicationCore.Entities
 {
-	internal class Product:BaseEntity<int>
+	public class Product:BaseEntity<int>
 	{
 		public string Name { get; set; }
 		public string ImageUri { get; set; }
