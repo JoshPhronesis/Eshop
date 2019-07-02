@@ -32,14 +32,14 @@ namespace WebApi.Controllers
 		}
 
 		[HttpGet("{id}", Name = "GetProduct")]
-		public async Task<IActionResult> Product(int productId)
+		public async Task<IActionResult> Product(int id)
 		{
-			if (productId <= 0)
+			if (id <= 0)
 			{
 				return BadRequest();
 			}
 
-			var product = await productService.GetProductAsync(productId);
+			var product = await productService.GetProductAsync(id);
 			var productDto = mapper.Map<ProductDto>(product);
 
 			return Ok(productDto);
@@ -63,10 +63,26 @@ namespace WebApi.Controllers
 				return BadRequest();
 			}
 
+			product.Id = id;
 			var productFromDto = mapper.Map<Product>(product);
 			await productService.UpdateProductAsync(productFromDto);
 
-			return CreatedAtAction("GetProduct", new { id = productFromRepo.Id }, productFromDto);
+			var productToReturn = mapper.Map<ProductDto>(productFromDto);
+			return CreatedAtRoute("GetProduct", new { id = productFromRepo.Id }, productToReturn);
+		}
+
+		[HttpDelete("{id}")]
+		public async Task<IActionResult> Delete(int id)
+		{
+			var productFromRepo = await productService.GetProductAsync(id);
+			if (productFromRepo == null)
+			{
+				return BadRequest();
+			}
+
+			await productService.DeleteProductAsync(id);
+
+			return NoContent();
 		}
 	}
 }
