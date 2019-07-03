@@ -11,12 +11,12 @@ import { PreventUnsavedChanges } from './_guards/prevent-unsaved-changes.guard';
 export const appRoutes: Routes = [
     {path: 'home', redirectTo: 'products', pathMatch: 'full'},
     {
-        path: '',
+        path: 'products',
         runGuardsAndResolvers: 'always',
         children:[
-            {path: 'products', component: ProductListComponent, resolve: {products: ProductListsResolver}},
-            {path: 'products/:id', component: ProductDetailComponent, resolve: {product: ProductDetailResolver}},
-            {path: 'products/edit/:id', component: ProductEditComponent, 
+            {path: '', component: ProductListComponent, resolve: {products: ProductListsResolver}},
+            {path: ':id', component: ProductDetailComponent, resolve: {product: ProductDetailResolver}},
+            {path: 'edit/:id', component: ProductEditComponent, 
                     resolve: {product: ProductEditResolver}, canDeactivate: [PreventUnsavedChanges]},
         ]
     },
