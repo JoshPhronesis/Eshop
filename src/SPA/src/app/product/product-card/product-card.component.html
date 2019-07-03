@@ -1,0 +1,20 @@
+<div class="card mb-4">
+  <div class="card-img-wrapper">
+    <img src="{{product.imageUri}}" alt="{{product.name}}" class="card-img-top">
+    <ul class="list-inline product-icons animate text-center">
+      <li class="list-inline-item">
+        <button class="btn btn-primary" [routerLink]="['/products', product.id]"><i class="fa fa-eye"></i></button>
+      </li>
+      <li class="list-inline-item">
+        <button class="btn btn-primary"><i class="fa fa-edit" [routerLink]="['/products/edit', product.id]"></i></button>
+      </li>
+      <li class="list-inline-item">
+        <button class="btn btn-primary"><i class="fa fa-trash" [routerLink]="['/products']" (click)=deleteProduct(product.id)></i></button>
+      </li>
+    </ul>
+  </div>
+  <div class="card-body p-1">
+    <h6 class="card-title txt-center mb-1"><i class="fa fa-shield"></i>
+    {{product.name}}</h6>
+  </div>
+</div>

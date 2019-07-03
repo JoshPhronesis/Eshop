@@ -1,0 +1,32 @@
+<div class="container mt-4">
+  <div class="row">
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>Edit Product</h2>
+    </div>
+    <div class="col-sm-8">
+      <div *ngIf="editForm.dirty" class="alert alert-info">
+        <strong>You have made changes. Any unsaved changes will be lost!</strong>
+      </div>
+    </div>
+ 
+    <div class="col-sm-8 mt-3">
+        <form id="editForm" #editForm="ngForm" (ngSubmit)="updateProduct()">
+            <h4>Name</h4>
+            <input type="text" class="form-control" name="name"[(ngModel)]="product.name" value="{{product?.name}}">
+            <br>  
+            <h4>Image Uri</h4>
+            <input type="text" class="form-control" name="imageUri"[(ngModel)]="product.imageUri" value="{{product?.imageUri}}">
+            <br>  
+            <h4>Price</h4>
+            <input type="text" class="form-control" name="price" [(ngModel)]="product.name" value="{{product?.price}}">
+            <br>  
+            <h4>Description</h4>
+            <textarea class="form-control" name="description" rows="6" [(ngModel)]="product.description">{{product?.description}}</textarea>
+            <br>  
+            <button form="editForm" [disabled]="!editForm.dirty" class="btn btn-success btn-block">Save Changes</button>
+        </form>
+      </div>
+    </div>
+  </div>

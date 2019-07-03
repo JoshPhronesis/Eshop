@@ -7,6 +7,7 @@ using ApplicationCore.Interfaces;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using WebApi.DTOs;
+using WebApi.Helpers;
 
 namespace WebApi.Controllers
 {
@@ -24,10 +25,12 @@ namespace WebApi.Controllers
 		}
 
 		[HttpGet]
-        public async Task<IActionResult> Products()
-        {
-			var products = await productService.GetProductsAsync();
-			var productsDto = mapper.Map<List<ProductDto>>(products);
+		public IActionResult Products(int currentPage = 1, int pageSize = 5)
+		{
+			var products = productService.GetPagedProducts(currentPage, pageSize);
+			var productsDto = mapper.Map<IEnumerable<ProductDto>>(products);
+			Response.AddPagination(currentPage, pageSize, products.TotalCount, products.TotalPages);
+
 			return Ok(productsDto);
 		}
 
@@ -51,7 +54,7 @@ namespace WebApi.Controllers
 			var product = mapper.Map<Product>(productDto);
 			var prod = await productService.AddProductAsync(product);
 
-			return CreatedAtAction("GetProduct", new { id = prod.Id }, productDto);
+			return CreatedAtRoute("GetProduct", new { id = prod.Id }, productDto);
 		}
 
 		[HttpPut("{id}")]

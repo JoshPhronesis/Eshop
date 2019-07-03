@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ApplicationCore.Entities;
@@ -42,6 +43,11 @@ namespace Infrastructure.Data
 		public async Task<T> GetByIdAsync(Tid id)
 		{
 			return await context.Set<T>().FindAsync(id);
+		}
+
+		public IQueryable<T> GetAllAsQueryable()
+		{
+			return context.Set<T>().AsQueryable();
 		}
 
 		public async Task UpdateAsync(T entity)

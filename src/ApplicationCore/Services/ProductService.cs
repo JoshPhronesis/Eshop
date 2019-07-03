@@ -1,8 +1,10 @@
 ﻿using ApplicationCore.Entities;
 using ApplicationCore.Exceptions;
+using ApplicationCore.Helpers;
 using ApplicationCore.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -38,9 +40,10 @@ namespace ApplicationCore.Services
 			return await repo.GetByIdAsync(productId);
 		}
 
-		public async Task<IEnumerable<Product>> GetProductsAsync()
+		public PagedList<Product> GetPagedProducts(int pageNumber, int pageSize)
 		{
-			return await repo.GetAllAsync();
+			var query = repo.GetAllAsQueryable(); 
+			return PagedList<Product>.Create(query, pageNumber, pageSize);
 		}
 
 		public async Task UpdateProductAsync(Product product)
@@ -51,6 +54,11 @@ namespace ApplicationCore.Services
 			}
 
 			await repo.UpdateAsync(product);
+		}
+
+		public async Task<IEnumerable<Product>> GetProductsAsync()
+		{
+			return await repo.GetAllAsync();
 		}
 	}
 }

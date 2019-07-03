@@ -36,6 +36,7 @@ namespace WebApi
 				});
 			});
 
+			services.AddCors();
 			services.AddAutoMapper(typeof(Startup));
 			services.AddScoped(typeof(IRepository<,>), typeof(Repository<,>));
 			services.AddScoped<IProductService, ProductService>();
@@ -65,6 +66,7 @@ namespace WebApi
 				c.SwaggerEndpoint("/swagger/v1/swagger.json", "Eshop service API V1");
 			});
 
+			app.UseCors(x => x.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
 			app.UseHttpsRedirection();
 			app.UseMvc();
 		}
