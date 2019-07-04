@@ -18,6 +18,7 @@ import { RouterModule } from '@angular/router';
 import { appRoutes } from './routes';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HomeComponent } from './home/home.component';
+import { PreventUnsavedChanges } from './_guards/prevent-unsaved-changes.guard';
 
 
 @NgModule({
@@ -29,11 +30,13 @@ import { HomeComponent } from './home/home.component';
       ProductDetailComponent,
       ProductEditComponent,
       ProductCardComponent,
-      HomeComponent
+      HomeComponent,
    ],
    imports: [
       FormsModule,
       BrowserModule,
+      FormsModule,
+      ReactiveFormsModule,
       HttpClientModule,
       PaginationModule.forRoot(),
       RouterModule.forRoot(appRoutes)
@@ -42,7 +45,8 @@ import { HomeComponent } from './home/home.component';
       ProductService,
       ProductEditResolver,
       ProductDetailResolver,
-      ProductListsResolver
+      ProductListsResolver,
+      PreventUnsavedChanges
    ],
    bootstrap: [
       AppComponent

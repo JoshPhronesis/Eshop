@@ -19,7 +19,6 @@ export class ProductListComponent implements OnInit {
 
   ngOnInit() {
     this.route.data.subscribe(data => {
-      console.log(data)
       this.products = data['products'].result;
       this.pagination = data['products'].pagination;
     });
@@ -31,9 +30,6 @@ export class ProductListComponent implements OnInit {
   }
 
   loadProducts() {
-// tslint:disable-next-line: no-debugger
-    debugger;
-
     this.productService.getProducts(this.pagination.currentPage, this.pagination.itemsPerPage)
     .subscribe((res: PaginatedResult<Product[]>) => {
       this.products = res.result;

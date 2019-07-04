@@ -25,11 +25,11 @@ namespace WebApi.Controllers
 		}
 
 		[HttpGet]
-		public IActionResult Products(int currentPage = 1, int pageSize = 5)
+		public IActionResult Products(int pageNumber, int pageSize)
 		{
-			var products = productService.GetPagedProducts(currentPage, pageSize);
+			var products = productService.GetPagedProducts(pageNumber, pageSize);
 			var productsDto = mapper.Map<IEnumerable<ProductDto>>(products);
-			Response.AddPagination(currentPage, pageSize, products.TotalCount, products.TotalPages);
+			Response.AddPagination(pageNumber, pageSize, products.TotalCount, products.TotalPages);
 
 			return Ok(productsDto);
 		}

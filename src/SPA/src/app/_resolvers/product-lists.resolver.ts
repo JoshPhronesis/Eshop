@@ -8,7 +8,7 @@ import { ProductService } from '../_services/product.service';
 @Injectable()
 export class ProductListsResolver implements Resolve<Product[]> {
     pageNumber = 1;
-    pageSize = 10;
+    pageSize = 12;
     constructor(private productService: ProductService , private router: Router) { }
 
     resolve(route: ActivatedRouteSnapshot): Observable<Product[]> {
