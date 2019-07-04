@@ -4,8 +4,8 @@
 
 <div class="container mt-3">
   <div class="row">
-    <div *ngFor="let product of products" class="col-sm-6 col-md-4 col-lg-4 col-xl-2">
-      <app-product-card [product]="product"></app-product-card>
+    <div *ngFor="let product of products"  class="col-sm-6 col-md-4 col-lg-4 col-xl-2">
+      <app-product-card [products]="products" [product]="product"></app-product-card>
     </div>
   </div>
 </div>

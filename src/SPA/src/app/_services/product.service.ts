@@ -16,7 +16,6 @@ export class ProductService {
   constructor(private http: HttpClient) { }
 
   getProducts(page?, itemsPerPage?): Observable<PaginatedResult<Product[]>>{
-    console.log("from service" + page)
     const paginatedResult: PaginatedResult<Product[]> = new PaginatedResult<Product[]>();
     let params = new HttpParams();
 

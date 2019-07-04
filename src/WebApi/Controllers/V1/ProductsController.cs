@@ -25,11 +25,11 @@ namespace WebApi.Controllers
 		}
 
 		[HttpGet]
-		public IActionResult Products(int pageNumber, int pageSize)
+		public IActionResult Products([FromQuery]PaginationParams pagination)
 		{
-			var products = productService.GetPagedProducts(pageNumber, pageSize);
+			var products = productService.GetPagedProducts(pagination.PageNumber, pagination.PageSize);
 			var productsDto = mapper.Map<IEnumerable<ProductDto>>(products);
-			Response.AddPagination(pageNumber, pageSize, products.TotalCount, products.TotalPages);
+			Response.AddPagination(pagination.PageNumber, pagination.PageSize, products.TotalCount, products.TotalPages);
 
 			return Ok(productsDto);
 		}
@@ -61,16 +61,17 @@ namespace WebApi.Controllers
 		public async Task<IActionResult> Update(int id, [FromBody]ProductDto product)
 		{
 			var productFromRepo = await productService.GetProductAsync(id);
-			if (productFromRepo  == null)
+			if (productFromRepo == null)
 			{
 				return BadRequest();
 			}
 
 			product.Id = id;
-			var productFromDto = mapper.Map<Product>(product);
-			await productService.UpdateProductAsync(productFromDto);
+			mapper.Map(product, productFromRepo);
 
-			var productToReturn = mapper.Map<ProductDto>(productFromDto);
+			await productService.UpdateProductAsync(productFromRepo);
+
+			var productToReturn = mapper.Map<ProductDto>(productFromRepo);
 			return CreatedAtRoute("GetProduct", new { id = productFromRepo.Id }, productToReturn);
 		}
 

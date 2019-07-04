@@ -12,6 +12,8 @@ export class ProductCardComponent implements OnInit {
   baseUrl = environment.apiUrl;
 
   @Input() product: Product;
+  @Input() products: Product[];
+
 
   constructor(private http: HttpClient) { }
 
@@ -20,8 +22,8 @@ export class ProductCardComponent implements OnInit {
 
   deleteProduct(id: number) {
     return this.http.delete(this.baseUrl + 'products/' + id ).subscribe(() => {
-      // this.products.splice(this.products.findIndex(x => x.id === id), 1);
-    },error =>{
+      this.products.splice(this.products.findIndex(x => x.id === id), 1);
+    }, error =>{
       console.log(error);
     });
   }

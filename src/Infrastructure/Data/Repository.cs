@@ -52,7 +52,7 @@ namespace Infrastructure.Data
 
 		public async Task UpdateAsync(T entity)
 		{
-			context.Set<T>().Update(entity);
+			context.Entry(entity).State = EntityState.Modified;
 			await context.SaveChangesAsync();
 		}
 	}
