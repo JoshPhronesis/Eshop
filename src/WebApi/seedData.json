@@ -1,98 +1,302 @@
 [
   {
-    "Name": "Xbox",
-    "ImageUri": "http://lorempixel.com/g/400/200",
-    "Price": "1000,00",
-    "Description": "Ex adipisicing ullamco eiusmod commodo laborum. Ut pariatur minim tempor pariatur cillum ipsum. Consequat dolor ullamco incididunt est pariatur elit officia incididunt enim quis magna eu ut pariatur.\r\n"
+    "ImageUri": "https://i.alza.co.uk/Foto/f3/XI/XI192c3.jpg",
+    "Name": "Xiaomi Redmi Note 7 LTE 64GB Blue",
+    "Description": "Mobile Phone 6,3\" IPS 2340x1080,  processor Qualcomm Snapdragon 660 8-core,  RAM 4 GB,  internal memory 64 GB,  Micro SD up to 256 GB,  main camera 48 Mpx (f/1,8) + 5 Mpx (f/2,4),  selfie camera 13 Mpx,  electronic stabilization,  GPS,  Glonass,  IrDA,  LTE,  Jack (3,5mm) and USB-C,  fingerprint reader,  hybrid slot,  unlocked,  quick charging,  battery 4000 mAh,  Android 9.0 Pie",
+    "Price": "201.90"
   },
   {
-    "Name": "IPhone",
-    "ImageUri": "http://lorempixel.com/g/400/200",
-    "Price": "2500,00",
-    "Description": "Ex adipisicing ullamco eiusmod commodo laborum. Ut pariatur minim tempor pariatur cillum ipsum. Consequat dolor ullamco incididunt est pariatur elit officia incididunt enim quis magna eu ut pariatur.\r\n"
+    "ImageUri": "https://i.alza.co.uk/Foto/f3/AS/AST030e.jpg",
+    "Name": "ASUS Zenfone 5z ZS620KL 256GB Silver",
+    "Description": "Mobile Phone 6,2\" IPS 2246 × 1080,  processor Qualcomm Snapdragon 845 8-core,  RAM 8 GB,  internal memory 256 GB,  Micro SDXC up to 2000 GB,  main camera 12 Mpx (f/1,8) + 8 Mpx,  selfie camera 8 Mpx,  optical and electronic stabilization,  GPS,  Glonass,  NFC,  LTE,  Jack (3,5mm) and USB-C,  fingerprint reader,  dual SIM,  unlocked,  quick charging,  battery 3300 mAh,  Android 8.0 Oreo",
+    "Price": "448.90"
   },
   {
-    "Name": "Pencil",
-    "ImageUri": "http://lorempixel.com/g/400/200",
-    "Price": "4000,00",
-    "Description": "Ex adipisicing ullamco eiusmod commodo laborum. Ut pariatur minim tempor pariatur cillum ipsum. Consequat dolor ullamco incididunt est pariatur elit officia incididunt enim quis magna eu ut pariatur.\r\n"
+    "ImageUri": "https://i.alza.co.uk/Foto/f3/RI/RI022a5.jpg",
+    "Name": "iPhone 8 256GB Silver",
+    "Description": "Mobile Phone 4,7\" IPS 1334×750,  processor Apple A11 Bionic 6-core,  RAM 2 GB,  internal memory 256 GB,  main camera 12 Mpx (f/1,8),  selfie camera 7 Mpx,  optical stabilization,  GPS,  Glonass,  NFC,  LTE,  Lightning port,  fingerprint reader,  single SIM,  water resistant IP67,  unlocked,  wireless charging,  quick charging,  battery 1821 mAh,  iOS 11",
+    "Price": "764.90"
   },
   {
-    "Name": "Cup",
-    "ImageUri": "http://lorempixel.com/g/400/200",
-    "Price": "2500,00",
-    "Description": "Ex adipisicing ullamco eiusmod commodo laborum. Ut pariatur minim tempor pariatur cillum ipsum. Consequat dolor ullamco incididunt est pariatur elit officia incididunt enim quis magna eu ut pariatur.\r\n"
+    "ImageUri": "https://i.alza.co.uk/Foto/f3/AS/AST037b1.jpg",
+    "Name": "Asus Zenfone Max M1 Black",
+    "Description": "Mobile Phone 5,5\" IPS 1440×720,  processor Qualcomm Snapdragon 430 8-core,  RAM 3 GB,  internal memory 32 GB,  Micro SD up to 256 GB,  main camera 13 Mpx + 8 Mpx (f/2,2),  selfie camera 8 Mpx,  electronic stabilization,  GPS,  Glonass,  LTE,  Jack (3,5mm) and USB micro,  fingerprint reader,  dual SIM + card,  unlocked,  quick charging,  battery 4000 mAh,  Android 8.0 Oreo",
+    "Price": "89.29"
   },
   {
-    "Name": "Pencil",
-    "ImageUri": "http://lorempixel.com/g/400/200",
-    "Price": "4000,00",
-    "Description": "Ex adipisicing ullamco eiusmod commodo laborum. Ut pariatur minim tempor pariatur cillum ipsum. Consequat dolor ullamco incididunt est pariatur elit officia incididunt enim quis magna eu ut pariatur.\r\n"
+    "ImageUri": "https://i.alza.co.uk/Foto/f3/HU/HU2921b3.jpg",
+    "Name": "HUAWEI P20 Lite Sakura Pink",
+    "Description": "Mobile Phone 5,84\" IPS 2280 × 1080,  processor HiSilicon Kirin 659 8-core,  RAM 4 GB,  internal memory 64 GB,  Micro SDXC up to 256 GB,  main camera 16 Mpx (f/2,2) + 2 Mpx,  selfie camera 16 Mpx,  GPS,  Glonass,  NFC,  LTE,  Jack (3,5mm) and USB-C,  fingerprint reader,  hybrid slot,  unlocked,  quick charging,  battery 3000 mAh,  Android 8.0 Oreo",
+    "Price": "192.90"
   },
   {
-    "Name": "Bottle Water",
-    "ImageUri": "http://lorempixel.com/g/400/200",
-    "Price": "100,00",
-    "Description": "Ex adipisicing ullamco eiusmod commodo laborum. Ut pariatur minim tempor pariatur cillum ipsum. Consequat dolor ullamco incididunt est pariatur elit officia incididunt enim quis magna eu ut pariatur.\r\n"
+    "ImageUri": "https://i.alza.co.uk/Foto/f3/HU/HU3135b3.jpg",
+    "Name": "HUAWEI P30 Lite gradient blue",
+    "Description": "Mobile Phone 6,15\" LTPS 2312 × 1080,  processor HiSilicon Kirin 710 8-core,  RAM 4 GB,  internal memory 128 GB,  Micro SD up to 512 GB,  main camera 48 Mpx (f/1,8) + 8 Mpx (f/2,4) + 2 Mpx (f/2,4),  selfie camera 24 Mpx,  GPS,  Glonass,  NFC,  LTE,  Jack (3,5mm) and USB-C,  fingerprint reader,  hybrid slot,  unlocked,  battery 3340 mAh,  Android 9.0 Pie",
+    "Price": "280.90"
   },
   {
-    "Name": "Tesla",
-    "ImageUri": "http://lorempixel.com/g/400/200",
-    "Price": "4000,00",
-    "Description": "Ex adipisicing ullamco eiusmod commodo laborum. Ut pariatur minim tempor pariatur cillum ipsum. Consequat dolor ullamco incididunt est pariatur elit officia incididunt enim quis magna eu ut pariatur.\r\n"
+    "ImageUri": "https://i.alza.co.uk/Foto/f3/RI/RI019a1i2d1.jpg",
+    "Name": "iPhone 6s 32GB Space Grey",
+    "Description": "Mobile Phone 4,7\" IPS 1334×750,  processor Apple A9 2-core,  RAM 2 GB,  internal memory 32 GB,  main camera 12 Mpx,  selfie camera 5 Mpx,  electronic stabilization,  GPS,  Glonass,  NFC,  LTE,  Jack (3,5mm) and Lightning port,  fingerprint reader,  single SIM,  unlocked,  battery 1715 mAh,  iOS 10",
+    "Price": "288.90"
   },
   {
-    "Name": "Samsung",
-    "ImageUri": "http://lorempixel.com/g/400/200",
-    "Price": "10000,00",
-    "Description": "Ex adipisicing ullamco eiusmod commodo laborum. Ut pariatur minim tempor pariatur cillum ipsum. Consequat dolor ullamco incididunt est pariatur elit officia incididunt enim quis magna eu ut pariatur.\r\n"
+    "ImageUri": "https://i.alza.co.uk/Foto/f3/RI/RI020a1.jpg",
+    "Name": "iPhone 7 32GB Black",
+    "Description": "Mobile Phone 4,7\" IPS 1334×750,  processor Apple A10 Fusion 4-core,  RAM 2 GB,  internal memory 32 GB,  main camera 12 Mpx (f/1,8),  selfie camera 7 Mpx,  optical stabilization,  GPS,  Glonass,  NFC,  LTE,  Lightning port,  fingerprint reader,  single SIM,  water resistant IP67,  unlocked,  battery 1960 mAh,  iOS 10",
+    "Price": "400.90"
   },
   {
-    "Name": "Xbox",
-    "ImageUri": "http://lorempixel.com/g/400/200",
-    "Price": "100,00",
-    "Description": "Ex adipisicing ullamco eiusmod commodo laborum. Ut pariatur minim tempor pariatur cillum ipsum. Consequat dolor ullamco incididunt est pariatur elit officia incididunt enim quis magna eu ut pariatur.\r\n"
+    "ImageUri": "https://i.alza.co.uk/Foto/f3/RI/RI025b2.jpg",
+    "Name": "iPhone Xs 64GB Space Grey",
+    "Description": "Mobile Phone 5,8\" P-OLED 2436 × 1125,  processor Apple A12 Bionic 6-core,  RAM 4 GB,  internal memory 64 GB,  main camera with optical zoom 12 Mpx (f/2,4) + 12 Mpx (f/1,8),  selfie camera 7 Mpx,  optical stabilization,  GPS,  Glonass,  NFC,  LTE,  Lightning port,  single SIM + eSIM,  water resistant IP68,  unlocked,  wireless charging,  quick charging,  battery 2658 mAh,  iOS 12",
+    "Price": "1,049"
   },
   {
-    "Name": "IPhone",
-    "ImageUri": "http://lorempixel.com/g/400/200",
-    "Price": "2500,00",
-    "Description": "Ex adipisicing ullamco eiusmod commodo laborum. Ut pariatur minim tempor pariatur cillum ipsum. Consequat dolor ullamco incididunt est pariatur elit officia incididunt enim quis magna eu ut pariatur.\r\n"
+    "ImageUri": "https://i.alza.co.uk/Foto/f3/RI/RI027c1.jpg",
+    "Name": "iPhone Xr 128GB White",
+    "Description": "Mobile Phone 6,1\" IPS 1792 × 828,  processor Apple A12 Bionic 6-core,  RAM 3 GB,  internal memory 128 GB,  main camera 12 Mpx (f/1,8),  selfie camera 7 Mpx,  optical stabilization,  GPS,  Glonass,  NFC,  LTE,  Lightning port,  single SIM + eSIM,  water resistant IP67,  unlocked,  wireless charging,  quick charging,  battery 2942 mAh,  iOS 12",
+    "Price": "818.90"
   },
   {
-    "Name": "Pencil",
-    "ImageUri": "http://lorempixel.com/g/400/200",
-    "Price": "4000,00",
-    "Description": "Ex adipisicing ullamco eiusmod commodo laborum. Ut pariatur minim tempor pariatur cillum ipsum. Consequat dolor ullamco incididunt est pariatur elit officia incididunt enim quis magna eu ut pariatur.\r\n"
+    "ImageUri": "https://i.alza.co.uk/Foto/f3/SA/SAMO0171b2.jpg",
+    "Name": "Samsung Galaxy A40 Dual SIM Blue",
+    "Description": "Mobile Phone 5,9\" AMOLED 2340x1080,  processor Samsung Exynos 7904\t 8-core,  RAM 4 GB,  internal memory 64 GB,  Micro SD up to 512 GB,  main camera 16 Mpx (f/1,7) + 5 Mpx (f/2,2),  selfie camera 24 Mpx,  GPS,  Glonass,  NFC,  LTE,  USB-C and Jack (3,5mm),  fingerprint reader,  dual SIM + card,  unlocked,  quick charging,  battery 3100 mAh,  Android 9.0 Pie",
+    "Price": "226.90"
   },
   {
-    "Name": "Cup",
-    "ImageUri": "http://lorempixel.com/g/400/200",
-    "Price": "2500,00",
-    "Description": "Ex adipisicing ullamco eiusmod commodo laborum. Ut pariatur minim tempor pariatur cillum ipsum. Consequat dolor ullamco incididunt est pariatur elit officia incididunt enim quis magna eu ut pariatur.\r\n"
+    "ImageUri": "https://i.alza.co.uk/Foto/f3/SA/SAMO0172b1.jpg",
+    "Name": "Samsung Galaxy A20e Dual SIM Black",
+    "Description": "Mobile Phone 5,8\" TFT 1560 × 720,  processor Samsung Exynos 7884 8-core,  RAM 3 GB,  internal memory 32 GB,  Micro SD up to 512 GB,  main camera 13 Mpx (f/1,9) + 5 Mpx (f/2,2),  selfie camera 8 Mpx,  GPS,  Glonass,  NFC,  LTE,  Jack (3,5mm) and USB-C,  fingerprint reader,  dual SIM,  unlocked,  quick charging,  battery 3000 mAh,  Android 9.0 Pie",
+    "Price": "173.90"
   },
   {
-    "Name": "Pencil",
-    "ImageUri": "http://lorempixel.com/g/400/200",
-    "Price": "4000,00",
-    "Description": "Ex adipisicing ullamco eiusmod commodo laborum. Ut pariatur minim tempor pariatur cillum ipsum. Consequat dolor ullamco incididunt est pariatur elit officia incididunt enim quis magna eu ut pariatur.\r\n"
+    "ImageUri": "https://i.alza.co.uk/Foto/f3/SA/SAMO0170b1.jpg",
+    "Name": "Samsung Galaxy A50 Dual SIM black",
+    "Description": "Mobile Phone 6,4\" AMOLED 2340x1080,  processor Samsung Exynos 9610 8-core,  RAM 4 GB,  internal memory 128 GB,  Micro SD up to 512 GB,  main camera 25 Mpx + 8 Mpx (f/2,2) + 5 Mpx (f/2,2),  selfie camera 25 Mpx,  GPS,  Glonass,  NFC,  LTE,  Jack (3,5mm) and USB-C,  fingerprint reader in screen,  dual SIM + card,  unlocked,  quick charging,  battery 4000 mAh,  Android 9.0 Pie",
+    "Price": "313.90"
   },
   {
-    "Name": "Bottle Water",
-    "ImageUri": "http://lorempixel.com/g/400/200",
-    "Price": "100,00",
-    "Description": "Ex adipisicing ullamco eiusmod commodo laborum. Ut pariatur minim tempor pariatur cillum ipsum. Consequat dolor ullamco incididunt est pariatur elit officia incididunt enim quis magna eu ut pariatur.\r\n"
+    "ImageUri": "https://i.alza.co.uk/Foto/f3/SA/SAMO0169b2.jpg",
+    "Name": "Samsung Galaxy S10+ Dual SIM 128GB Back",
+    "Description": "Mobile Phone 6,4\" AMOLED 3040 × 1440,  processor Samsung Exynos 9820 8-core,  RAM 8 GB,  internal memory 128 GB,  Micro SDXC up to 512 GB,  main camera with optical zoom and variable aperture 12 Mpx (f/1,5) + 16 Mpx (f/2,4) + 12 Mpx (f/2,2),  selfie camera 10 Mpx + 8 Mpx,  optical stabilization,  GPS,  Glonass,  NFC,  LTE,  Jack (3,5mm) and USB-C,  fingerprint reader in screen,  hybrid slot,  water resistant IP68,  unlocked,  reverse wireless charging,  quick charging,  battery 4100 mAh,  Android 9.0 Pie",
+    "Price": "906.90"
   },
   {
-    "Name": "Tesla",
-    "ImageUri": "http://lorempixel.com/g/400/200",
-    "Price": "4000,00",
-    "Description": "Ex adipisicing ullamco eiusmod commodo laborum. Ut pariatur minim tempor pariatur cillum ipsum. Consequat dolor ullamco incididunt est pariatur elit officia incididunt enim quis magna eu ut pariatur.\r\n"
+    "ImageUri": "https://i.alza.co.uk/Foto/f3/SA/SAMO0157.jpg",
+    "Name": "Samsung Galaxy S9 Duos Black",
+    "Description": "Mobile Phone 5,8\" AMOLED 2960 × 1440,  processor Samsung Exynos 9810 8-core,  RAM 4 GB,  internal memory 64 GB,  Micro SDXC up to 400 GB,  main camera 12 Mpx (f/1,5),  selfie camera 8 Mpx,  optical and electronic stabilization,  GPS,  Glonass,  NFC,  LTE,  Jack (3,5mm) and USB-C,  fingerprint reader,  hybrid slot,  water resistant IP68,  unlocked,  wireless charging,  quick charging,  battery 3000 mAh,  Android 8.0 Oreo",
+    "Price": "557.90"
   },
   {
-    "Name": "Samsung",
-    "ImageUri": "http://lorempixel.com/g/400/200",
-    "Price": "10000,00",
-    "Description": "Ex adipisicing ullamco eiusmod commodo laborum. Ut pariatur minim tempor pariatur cillum ipsum. Consequat dolor ullamco incididunt est pariatur elit officia incididunt enim quis magna eu ut pariatur.\r\n"
+    "ImageUri": "https://i.alza.co.uk/Foto/f3/UM/UM297b.jpg",
+    "Name": "Honor 7A 32GB Blue",
+    "Description": "Mobile Phone 5,7\" IPS 1440×720,  processor Qualcomm Snapdragon 430 8-core,  RAM 3 GB,  internal memory 32 GB,  Micro SD up to 256 GB,  main camera 13 Mpx (f/2,2),  selfie camera 8 Mpx,  GPS,  Glonass,  LTE,  Jack (3,5mm) and USB micro,  fingerprint reader,  dual SIM + card,  unlocked,  battery 3000 mAh,  Android 8.0 Oreo",
+    "Price": "96.90"
+  },
+  {
+    "ImageUri": "https://i.alza.co.uk/Foto/f3/XI/XI170c1.jpg",
+    "Name": "Xiaomi Mi A2 64GB LTE Black",
+    "Description": "Mobile Phone 5,99\" IPS 2160x1080,  processor Qualcomm Snapdragon 660 8-core,  RAM 4 GB,  internal memory 64 GB,  main camera 20 Mpx + 20 Mpx,  selfie camera 20 Mpx,  GPS,  Glonass,  IrDA,  LTE,  USB-C,  fingerprint reader,  dual SIM,  unlocked,  quick charging,  battery 3010 mAh,  Android 8.1 Oreo",
+    "Price": "139.90"
+  },
+  {
+    "ImageUri": "https://i.alza.co.uk/Foto/f3/XI/XI184b1.jpg",
+    "Name": "Xiaomi Redmi 6 32GB LTE Black",
+    "Description": "Mobile Phone 5,45\" IPS 1440×720,  processor MediaTek MT6762 (Helio P22) 8-core,  RAM 3 GB,  internal memory 32 GB,  Micro SD up to 256 GB,  main camera 12 Mpx (f/2,2) + 5 Mpx (f/2,2),  selfie camera 5 Mpx,  GPS,  Glonass,  LTE,  Jack (3,5mm) and USB micro,  fingerprint reader,  dual SIM + card,  unlocked,  battery 3000 mAh,  Android 8.1 Oreo",
+    "Price": "96.90"
+  },
+  {
+    "ImageUri": "https://i.alza.co.uk/Foto/f3/XI/XI193c3.jpg",
+    "Name": "Xiaomi Redmi 7 LTE 32GB blue",
+    "Description": "Mobile Phone 6,26\" IPS 1520 × 720,  processor Qualcomm Snapdragon 632 8-core,  RAM 3 GB,  internal memory 32 GB,  Micro SD up to 256 GB,  main camera 12 Mpx (f/2,2) + 2 Mpx,  selfie camera 8 Mpx,  electronic stabilization,  GPS,  Glonass,  IrDA,  LTE,  Jack (3,5mm) and USB micro,  fingerprint reader,  dual SIM,  unlocked,  battery 4000 mAh,  Android 9.0 Pie",
+    "Price": "139.90"
+  },
+  {
+    "ImageUri": "https://i.alza.co.uk/Foto/f3/XI/XI194c1.jpg",
+    "Name": "Xiaomi Mi 9 SE LTE 128GB black",
+    "Description": "Mobile Phone 5,97\" AMOLED 2340x1080,  8-core processor,  RAM 6 GB,  internal memory 128 GB,  main camera with optical zoom 48 Mpx (f/1,8) + 13 Mpx (f/2,4) + 8 Mpx (f/2,4),  selfie camera 20 Mpx,  electronic stabilization,  GPS,  Glonass,  IrDA,  NFC,  LTE,  USB-C,  fingerprint reader in screen,  dual SIM,  unlocked,  quick charging,  battery 3070 mAh,  Android 9.0 Pie",
+    "Price": "348.90"
+  },
+  {
+    "ImageUri": "https://i.alza.co.uk/Foto/f3/SA/SAMO0163b2.jpg",
+    "Name": "Samsung Galaxy A7 Dual SIM blue",
+    "Description": "Mobile Phone 6\" AMOLED 2220 × 1080,  processor Samsung Exynos 7885 8-core,  RAM 4 GB,  internal memory 64 GB,  Micro SDXC up to 512 GB,  main camera 24 Mpx (f/1,7) + 5 Mpx (f/2,2),  selfie camera 24 Mpx,  GPS,  Glonass,  NFC,  LTE,  Jack (3,5mm) and USB micro,  fingerprint reader,  dual SIM,  unlocked,  battery 3300 mAh,  Android 8.0 Oreo",
+    "Price": "243.90"
+  },
+  {
+    "ImageUri": "https://i.alza.co.uk/Foto/f3/SA/SAMO0163b1.jpg",
+    "Name": "Samsung Galaxy A7 Dual SIM black",
+    "Description": "Mobile Phone 6\" AMOLED 2220 × 1080,  processor Samsung Exynos 7885 8-core,  RAM 4 GB,  internal memory 64 GB,  Micro SDXC up to 512 GB,  main camera 24 Mpx (f/1,7) + 5 Mpx (f/2,2),  selfie camera 24 Mpx,  GPS,  Glonass,  NFC,  LTE,  Jack (3,5mm) and USB micro,  fingerprint reader,  dual SIM,  unlocked,  battery 3300 mAh,  Android 8.0 Oreo",
+    "Price": "243.90"
+  },
+  {
+    "ImageUri": "https://i.alza.co.uk/Foto/f3/PP/PP552b1.jpg",
+    "Name": "MyPhone Hammer Energy LTE 18x9 Black",
+    "Description": "Mobile Phone 5,7\" IPS 1440×720,  processor MediaTek MT6739 4-core,  RAM 3 GB,  internal memory 32 GB,  Micro SD up to 128 GB,  main camera 13 Mpx,  selfie camera 8 Mpx,  GPS,  Glonass,  NFC,  LTE,  USB-C,  fingerprint reader,  hybrid slot,  water resistant IP68,  rugged,  unlocked,  quick charging,  battery 5000 mAh,  Android 8.1 Oreo",
+    "Price": "175.90"
+  },
+  {
+    "ImageUri": "https://i.alza.co.uk/Foto/f3/SM/SMTR5029b2.jpg",
+    "Name": "Motorola One Dual SIM White",
+    "Description": "Mobile Phone 5,9\" IPS 1520 × 720,  processor Qualcomm Snapdragon 625 8-core,  RAM 4 GB,  internal memory 64 GB,  Micro SDXC up to 256 GB,  main camera 13 Mpx + 2 Mpx,  selfie camera 8 Mpx,  GPS,  Glonass,  NFC,  LTE,  Jack (3,5mm) and USB-C,  fingerprint reader,  dual SIM,  unlocked,  quick charging,  battery 3000 mAh,  Android 8.1 Oreo",
+    "Price": "147.90"
+  },
+  {
+    "ImageUri": "https://i.alza.co.uk/Foto/f3/SM/SMRT5035b1.jpg",
+    "Name": "Motorola One Vision Bronze",
+    "Description": "Mobile Phone 6,3\" IPS 2520 × 1080,  processor Samsung Exynos 9609\t 8-core,  RAM 4 GB,  internal memory 128 GB,  Micro SD up to 2048 GB,  main camera 48 Mpx (f/1,7) + 12 Mpx (f/2,2),  selfie camera 25 Mpx,  optical stabilization,  GPS,  Glonass,  NFC,  LTE,  Jack (3,5mm) and USB-C,  fingerprint reader,  dual SIM,  unlocked,  quick charging,  battery 3500 mAh,  Android 9.0 Pie",
+    "Price": "263.90"
+  },
+  {
+    "ImageUri": "https://i.alza.co.uk/Foto/f3/XI/XI192c3.jpg",
+    "Name": "Xiaomi Redmi Note 7 LTE 64GB Blue",
+    "Description": "Mobile Phone 6,3\" IPS 2340x1080,  processor Qualcomm Snapdragon 660 8-core,  RAM 4 GB,  internal memory 64 GB,  Micro SD up to 256 GB,  main camera 48 Mpx (f/1,8) + 5 Mpx (f/2,4),  selfie camera 13 Mpx,  electronic stabilization,  GPS,  Glonass,  IrDA,  LTE,  Jack (3,5mm) and USB-C,  fingerprint reader,  hybrid slot,  unlocked,  quick charging,  battery 4000 mAh,  Android 9.0 Pie",
+    "Price": "201.90"
+  },
+  {
+    "ImageUri": "https://i.alza.co.uk/Foto/f3/AS/AST030e.jpg",
+    "Name": "ASUS Zenfone 5z ZS620KL 256GB Silver",
+    "Description": "Mobile Phone 6,2\" IPS 2246 × 1080,  processor Qualcomm Snapdragon 845 8-core,  RAM 8 GB,  internal memory 256 GB,  Micro SDXC up to 2000 GB,  main camera 12 Mpx (f/1,8) + 8 Mpx,  selfie camera 8 Mpx,  optical and electronic stabilization,  GPS,  Glonass,  NFC,  LTE,  Jack (3,5mm) and USB-C,  fingerprint reader,  dual SIM,  unlocked,  quick charging,  battery 3300 mAh,  Android 8.0 Oreo",
+    "Price": "448.90"
+  },
+  {
+    "ImageUri": "https://i.alza.co.uk/Foto/f3/RI/RI022a5.jpg",
+    "Name": "iPhone 8 256GB Silver",
+    "Description": "Mobile Phone 4,7\" IPS 1334×750,  processor Apple A11 Bionic 6-core,  RAM 2 GB,  internal memory 256 GB,  main camera 12 Mpx (f/1,8),  selfie camera 7 Mpx,  optical stabilization,  GPS,  Glonass,  NFC,  LTE,  Lightning port,  fingerprint reader,  single SIM,  water resistant IP67,  unlocked,  wireless charging,  quick charging,  battery 1821 mAh,  iOS 11",
+    "Price": "764.90"
+  },
+  {
+    "ImageUri": "https://i.alza.co.uk/Foto/f3/AS/AST037b1.jpg",
+    "Name": "Asus Zenfone Max M1 Black",
+    "Description": "Mobile Phone 5,5\" IPS 1440×720,  processor Qualcomm Snapdragon 430 8-core,  RAM 3 GB,  internal memory 32 GB,  Micro SD up to 256 GB,  main camera 13 Mpx + 8 Mpx (f/2,2),  selfie camera 8 Mpx,  electronic stabilization,  GPS,  Glonass,  LTE,  Jack (3,5mm) and USB micro,  fingerprint reader,  dual SIM + card,  unlocked,  quick charging,  battery 4000 mAh,  Android 8.0 Oreo",
+    "Price": "89.29"
+  },
+  {
+    "ImageUri": "https://i.alza.co.uk/Foto/f3/HU/HU2921b3.jpg",
+    "Name": "HUAWEI P20 Lite Sakura Pink",
+    "Description": "Mobile Phone 5,84\" IPS 2280 × 1080,  processor HiSilicon Kirin 659 8-core,  RAM 4 GB,  internal memory 64 GB,  Micro SDXC up to 256 GB,  main camera 16 Mpx (f/2,2) + 2 Mpx,  selfie camera 16 Mpx,  GPS,  Glonass,  NFC,  LTE,  Jack (3,5mm) and USB-C,  fingerprint reader,  hybrid slot,  unlocked,  quick charging,  battery 3000 mAh,  Android 8.0 Oreo",
+    "Price": "192.90"
+  },
+  {
+    "ImageUri": "https://i.alza.co.uk/Foto/f3/HU/HU3135b3.jpg",
+    "Name": "HUAWEI P30 Lite gradient blue",
+    "Description": "Mobile Phone 6,15\" LTPS 2312 × 1080,  processor HiSilicon Kirin 710 8-core,  RAM 4 GB,  internal memory 128 GB,  Micro SD up to 512 GB,  main camera 48 Mpx (f/1,8) + 8 Mpx (f/2,4) + 2 Mpx (f/2,4),  selfie camera 24 Mpx,  GPS,  Glonass,  NFC,  LTE,  Jack (3,5mm) and USB-C,  fingerprint reader,  hybrid slot,  unlocked,  battery 3340 mAh,  Android 9.0 Pie",
+    "Price": "280.90"
+  },
+  {
+    "ImageUri": "https://i.alza.co.uk/Foto/f3/RI/RI019a1i2d1.jpg",
+    "Name": "iPhone 6s 32GB Space Grey",
+    "Description": "Mobile Phone 4,7\" IPS 1334×750,  processor Apple A9 2-core,  RAM 2 GB,  internal memory 32 GB,  main camera 12 Mpx,  selfie camera 5 Mpx,  electronic stabilization,  GPS,  Glonass,  NFC,  LTE,  Jack (3,5mm) and Lightning port,  fingerprint reader,  single SIM,  unlocked,  battery 1715 mAh,  iOS 10",
+    "Price": "288.90"
+  },
+  {
+    "ImageUri": "https://i.alza.co.uk/Foto/f3/RI/RI020a1.jpg",
+    "Name": "iPhone 7 32GB Black",
+    "Description": "Mobile Phone 4,7\" IPS 1334×750,  processor Apple A10 Fusion 4-core,  RAM 2 GB,  internal memory 32 GB,  main camera 12 Mpx (f/1,8),  selfie camera 7 Mpx,  optical stabilization,  GPS,  Glonass,  NFC,  LTE,  Lightning port,  fingerprint reader,  single SIM,  water resistant IP67,  unlocked,  battery 1960 mAh,  iOS 10",
+    "Price": "400.90"
+  },
+  {
+    "ImageUri": "https://i.alza.co.uk/Foto/f3/RI/RI025b2.jpg",
+    "Name": "iPhone Xs 64GB Space Grey",
+    "Description": "Mobile Phone 5,8\" P-OLED 2436 × 1125,  processor Apple A12 Bionic 6-core,  RAM 4 GB,  internal memory 64 GB,  main camera with optical zoom 12 Mpx (f/2,4) + 12 Mpx (f/1,8),  selfie camera 7 Mpx,  optical stabilization,  GPS,  Glonass,  NFC,  LTE,  Lightning port,  single SIM + eSIM,  water resistant IP68,  unlocked,  wireless charging,  quick charging,  battery 2658 mAh,  iOS 12",
+    "Price": "1,049"
+  },
+  {
+    "ImageUri": "https://i.alza.co.uk/Foto/f3/RI/RI027c1.jpg",
+    "Name": "iPhone Xr 128GB White",
+    "Description": "Mobile Phone 6,1\" IPS 1792 × 828,  processor Apple A12 Bionic 6-core,  RAM 3 GB,  internal memory 128 GB,  main camera 12 Mpx (f/1,8),  selfie camera 7 Mpx,  optical stabilization,  GPS,  Glonass,  NFC,  LTE,  Lightning port,  single SIM + eSIM,  water resistant IP67,  unlocked,  wireless charging,  quick charging,  battery 2942 mAh,  iOS 12",
+    "Price": "818.90"
+  },
+  {
+    "ImageUri": "https://i.alza.co.uk/Foto/f3/SA/SAMO0171b2.jpg",
+    "Name": "Samsung Galaxy A40 Dual SIM Blue",
+    "Description": "Mobile Phone 5,9\" AMOLED 2340x1080,  processor Samsung Exynos 7904\t 8-core,  RAM 4 GB,  internal memory 64 GB,  Micro SD up to 512 GB,  main camera 16 Mpx (f/1,7) + 5 Mpx (f/2,2),  selfie camera 24 Mpx,  GPS,  Glonass,  NFC,  LTE,  USB-C and Jack (3,5mm),  fingerprint reader,  dual SIM + card,  unlocked,  quick charging,  battery 3100 mAh,  Android 9.0 Pie",
+    "Price": "226.90"
+  },
+  {
+    "ImageUri": "https://i.alza.co.uk/Foto/f3/SA/SAMO0172b1.jpg",
+    "Name": "Samsung Galaxy A20e Dual SIM Black",
+    "Description": "Mobile Phone 5,8\" TFT 1560 × 720,  processor Samsung Exynos 7884 8-core,  RAM 3 GB,  internal memory 32 GB,  Micro SD up to 512 GB,  main camera 13 Mpx (f/1,9) + 5 Mpx (f/2,2),  selfie camera 8 Mpx,  GPS,  Glonass,  NFC,  LTE,  Jack (3,5mm) and USB-C,  fingerprint reader,  dual SIM,  unlocked,  quick charging,  battery 3000 mAh,  Android 9.0 Pie",
+    "Price": "173.90"
+  },
+  {
+    "ImageUri": "https://i.alza.co.uk/Foto/f3/SA/SAMO0170b1.jpg",
+    "Name": "Samsung Galaxy A50 Dual SIM black",
+    "Description": "Mobile Phone 6,4\" AMOLED 2340x1080,  processor Samsung Exynos 9610 8-core,  RAM 4 GB,  internal memory 128 GB,  Micro SD up to 512 GB,  main camera 25 Mpx + 8 Mpx (f/2,2) + 5 Mpx (f/2,2),  selfie camera 25 Mpx,  GPS,  Glonass,  NFC,  LTE,  Jack (3,5mm) and USB-C,  fingerprint reader in screen,  dual SIM + card,  unlocked,  quick charging,  battery 4000 mAh,  Android 9.0 Pie",
+    "Price": "313.90"
+  },
+  {
+    "ImageUri": "https://i.alza.co.uk/Foto/f3/SA/SAMO0169b2.jpg",
+    "Name": "Samsung Galaxy S10+ Dual SIM 128GB Back",
+    "Description": "Mobile Phone 6,4\" AMOLED 3040 × 1440,  processor Samsung Exynos 9820 8-core,  RAM 8 GB,  internal memory 128 GB,  Micro SDXC up to 512 GB,  main camera with optical zoom and variable aperture 12 Mpx (f/1,5) + 16 Mpx (f/2,4) + 12 Mpx (f/2,2),  selfie camera 10 Mpx + 8 Mpx,  optical stabilization,  GPS,  Glonass,  NFC,  LTE,  Jack (3,5mm) and USB-C,  fingerprint reader in screen,  hybrid slot,  water resistant IP68,  unlocked,  reverse wireless charging,  quick charging,  battery 4100 mAh,  Android 9.0 Pie",
+    "Price": "906.90"
+  },
+  {
+    "ImageUri": "https://i.alza.co.uk/Foto/f3/SA/SAMO0157.jpg",
+    "Name": "Samsung Galaxy S9 Duos Black",
+    "Description": "Mobile Phone 5,8\" AMOLED 2960 × 1440,  processor Samsung Exynos 9810 8-core,  RAM 4 GB,  internal memory 64 GB,  Micro SDXC up to 400 GB,  main camera 12 Mpx (f/1,5),  selfie camera 8 Mpx,  optical and electronic stabilization,  GPS,  Glonass,  NFC,  LTE,  Jack (3,5mm) and USB-C,  fingerprint reader,  hybrid slot,  water resistant IP68,  unlocked,  wireless charging,  quick charging,  battery 3000 mAh,  Android 8.0 Oreo",
+    "Price": "557.90"
+  },
+  {
+    "ImageUri": "https://i.alza.co.uk/Foto/f3/UM/UM297b.jpg",
+    "Name": "Honor 7A 32GB Blue",
+    "Description": "Mobile Phone 5,7\" IPS 1440×720,  processor Qualcomm Snapdragon 430 8-core,  RAM 3 GB,  internal memory 32 GB,  Micro SD up to 256 GB,  main camera 13 Mpx (f/2,2),  selfie camera 8 Mpx,  GPS,  Glonass,  LTE,  Jack (3,5mm) and USB micro,  fingerprint reader,  dual SIM + card,  unlocked,  battery 3000 mAh,  Android 8.0 Oreo",
+    "Price": "96.90"
+  },
+  {
+    "ImageUri": "https://i.alza.co.uk/Foto/f3/XI/XI170c1.jpg",
+    "Name": "Xiaomi Mi A2 64GB LTE Black",
+    "Description": "Mobile Phone 5,99\" IPS 2160x1080,  processor Qualcomm Snapdragon 660 8-core,  RAM 4 GB,  internal memory 64 GB,  main camera 20 Mpx + 20 Mpx,  selfie camera 20 Mpx,  GPS,  Glonass,  IrDA,  LTE,  USB-C,  fingerprint reader,  dual SIM,  unlocked,  quick charging,  battery 3010 mAh,  Android 8.1 Oreo",
+    "Price": "139.90"
+  },
+  {
+    "ImageUri": "https://i.alza.co.uk/Foto/f3/XI/XI184b1.jpg",
+    "Name": "Xiaomi Redmi 6 32GB LTE Black",
+    "Description": "Mobile Phone 5,45\" IPS 1440×720,  processor MediaTek MT6762 (Helio P22) 8-core,  RAM 3 GB,  internal memory 32 GB,  Micro SD up to 256 GB,  main camera 12 Mpx (f/2,2) + 5 Mpx (f/2,2),  selfie camera 5 Mpx,  GPS,  Glonass,  LTE,  Jack (3,5mm) and USB micro,  fingerprint reader,  dual SIM + card,  unlocked,  battery 3000 mAh,  Android 8.1 Oreo",
+    "Price": "96.90"
+  },
+  {
+    "ImageUri": "https://i.alza.co.uk/Foto/f3/XI/XI193c3.jpg",
+    "Name": "Xiaomi Redmi 7 LTE 32GB blue",
+    "Description": "Mobile Phone 6,26\" IPS 1520 × 720,  processor Qualcomm Snapdragon 632 8-core,  RAM 3 GB,  internal memory 32 GB,  Micro SD up to 256 GB,  main camera 12 Mpx (f/2,2) + 2 Mpx,  selfie camera 8 Mpx,  electronic stabilization,  GPS,  Glonass,  IrDA,  LTE,  Jack (3,5mm) and USB micro,  fingerprint reader,  dual SIM,  unlocked,  battery 4000 mAh,  Android 9.0 Pie",
+    "Price": "139.90"
+  },
+  {
+    "ImageUri": "https://i.alza.co.uk/Foto/f3/XI/XI194c1.jpg",
+    "Name": "Xiaomi Mi 9 SE LTE 128GB black",
+    "Description": "Mobile Phone 5,97\" AMOLED 2340x1080,  8-core processor,  RAM 6 GB,  internal memory 128 GB,  main camera with optical zoom 48 Mpx (f/1,8) + 13 Mpx (f/2,4) + 8 Mpx (f/2,4),  selfie camera 20 Mpx,  electronic stabilization,  GPS,  Glonass,  IrDA,  NFC,  LTE,  USB-C,  fingerprint reader in screen,  dual SIM,  unlocked,  quick charging,  battery 3070 mAh,  Android 9.0 Pie",
+    "Price": "348.90"
+  },
+  {
+    "ImageUri": "https://i.alza.co.uk/Foto/f3/SA/SAMO0163b2.jpg",
+    "Name": "Samsung Galaxy A7 Dual SIM blue",
+    "Description": "Mobile Phone 6\" AMOLED 2220 × 1080,  processor Samsung Exynos 7885 8-core,  RAM 4 GB,  internal memory 64 GB,  Micro SDXC up to 512 GB,  main camera 24 Mpx (f/1,7) + 5 Mpx (f/2,2),  selfie camera 24 Mpx,  GPS,  Glonass,  NFC,  LTE,  Jack (3,5mm) and USB micro,  fingerprint reader,  dual SIM,  unlocked,  battery 3300 mAh,  Android 8.0 Oreo",
+    "Price": "243.90"
+  },
+  {
+    "ImageUri": "https://i.alza.co.uk/Foto/f3/SA/SAMO0163b1.jpg",
+    "Name": "Samsung Galaxy A7 Dual SIM black",
+    "Description": "Mobile Phone 6\" AMOLED 2220 × 1080,  processor Samsung Exynos 7885 8-core,  RAM 4 GB,  internal memory 64 GB,  Micro SDXC up to 512 GB,  main camera 24 Mpx (f/1,7) + 5 Mpx (f/2,2),  selfie camera 24 Mpx,  GPS,  Glonass,  NFC,  LTE,  Jack (3,5mm) and USB micro,  fingerprint reader,  dual SIM,  unlocked,  battery 3300 mAh,  Android 8.0 Oreo",
+    "Price": "243.90"
+  },
+  {
+    "ImageUri": "https://i.alza.co.uk/Foto/f3/PP/PP552b1.jpg",
+    "Name": "MyPhone Hammer Energy LTE 18x9 Black",
+    "Description": "Mobile Phone 5,7\" IPS 1440×720,  processor MediaTek MT6739 4-core,  RAM 3 GB,  internal memory 32 GB,  Micro SD up to 128 GB,  main camera 13 Mpx,  selfie camera 8 Mpx,  GPS,  Glonass,  NFC,  LTE,  USB-C,  fingerprint reader,  hybrid slot,  water resistant IP68,  rugged,  unlocked,  quick charging,  battery 5000 mAh,  Android 8.1 Oreo",
+    "Price": "175.90"
+  },
+  {
+    "ImageUri": "https://i.alza.co.uk/Foto/f3/SM/SMTR5029b2.jpg",
+    "Name": "Motorola One Dual SIM White",
+    "Description": "Mobile Phone 5,9\" IPS 1520 × 720,  processor Qualcomm Snapdragon 625 8-core,  RAM 4 GB,  internal memory 64 GB,  Micro SDXC up to 256 GB,  main camera 13 Mpx + 2 Mpx,  selfie camera 8 Mpx,  GPS,  Glonass,  NFC,  LTE,  Jack (3,5mm) and USB-C,  fingerprint reader,  dual SIM,  unlocked,  quick charging,  battery 3000 mAh,  Android 8.1 Oreo",
+    "Price": "147.90"
+  },
+  {
+    "ImageUri": "https://i.alza.co.uk/Foto/f3/SM/SMRT5035b1.jpg",
+    "Name": "Motorola One Vision Bronze",
+    "Description": "Mobile Phone 6,3\" IPS 2520 × 1080,  processor Samsung Exynos 9609\t 8-core,  RAM 4 GB,  internal memory 128 GB,  Micro SD up to 2048 GB,  main camera 48 Mpx (f/1,7) + 12 Mpx (f/2,2),  selfie camera 25 Mpx,  optical stabilization,  GPS,  Glonass,  NFC,  LTE,  Jack (3,5mm) and USB-C,  fingerprint reader,  dual SIM,  unlocked,  quick charging,  battery 3500 mAh,  Android 9.0 Pie",
+    "Price": "263.90"
   }
 ]

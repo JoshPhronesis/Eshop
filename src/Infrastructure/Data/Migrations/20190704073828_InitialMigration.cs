@@ -14,7 +14,7 @@ namespace Infrastructure.Data.Migrations
                         .Annotation("Sqlite:Autoincrement", true),
                     Name = table.Column<string>(nullable: false),
                     ImageUri = table.Column<string>(nullable: false),
-                    Price = table.Column<decimal>(type: "decimal(5,2)", nullable: false),
+                    Price = table.Column<decimal>(nullable: false),
                     Description = table.Column<string>(nullable: true)
                 },
                 constraints: table =>

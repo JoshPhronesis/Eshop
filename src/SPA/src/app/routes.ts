@@ -16,8 +16,7 @@ export const appRoutes: Routes = [
         children:[
             {path: '', component: ProductListComponent, resolve: {products: ProductListsResolver}},
             {path: ':id', component: ProductDetailComponent, resolve: {product: ProductDetailResolver}},
-            {path: 'edit/:id', component: ProductEditComponent, 
-                    resolve: {product: ProductEditResolver}, canDeactivate: [PreventUnsavedChanges]},
+            {path: 'edit/:id', component: ProductEditComponent, resolve: {product: ProductEditResolver}},
         ]
     },
     {path: '**', redirectTo: '/products', pathMatch: 'full'},

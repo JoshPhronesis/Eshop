@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild, HostListener } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Product } from 'src/app/_models/product';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ProductService } from 'src/app/_services/product.service';
 
 @Component({
@@ -13,15 +13,16 @@ export class ProductEditComponent implements OnInit {
   @ViewChild('editForm') editForm: NgForm;
 
   product: Product;
-
+  isSaved: boolean;
+  
   @HostListener('window:beforeunload', ['$event'])
   unloadNotificvation($event: any) {
-    if(this.editForm.dirty){
+    if(!this.isSaved){
        $event.returnValue = true;
     }
   }
 
-  constructor(private route: ActivatedRoute, private productService: ProductService) { }
+  constructor(private route: ActivatedRoute, private productService: ProductService, private router: Router) { }
 
   ngOnInit() {
     this.route.data.subscribe(data => {
@@ -31,7 +32,8 @@ export class ProductEditComponent implements OnInit {
 
   updateProduct() {
     this.productService.updateProduct(this.product.id, this.product).subscribe(next => {
-      this.editForm.reset(this.product);
+      this.isSaved = true;
+      this.router.navigate(['/products', this.product.id]);
     }, error => {
       console.log('an error occurred');
     });

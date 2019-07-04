@@ -15,7 +15,6 @@ namespace ApplicationCore.Entities
 		public string ImageUri { get; set; }
 
 		[Required]
-		[Column(TypeName = "decimal(5,2)")]
 		public decimal Price { get; set; }
 		public string Description { get; set; }
 	}

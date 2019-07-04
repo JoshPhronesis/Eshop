@@ -28,8 +28,7 @@ namespace Infrastructure.Data.Migrations
                     b.Property<string>("Name")
                         .IsRequired();
 
-                    b.Property<decimal>("Price")
-                        .HasColumnType("decimal(5,2)");
+                    b.Property<decimal>("Price");
 
                     b.HasKey("Id");
 
