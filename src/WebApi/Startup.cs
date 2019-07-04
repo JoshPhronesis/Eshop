@@ -38,7 +38,7 @@ namespace WebApi
 
 			services.AddCors();
 			services.AddAutoMapper(typeof(Startup));
-			services.AddScoped(typeof(IRepository<,>), typeof(Repository<,>));
+			services.AddScoped(typeof(IAsyncRepository<,>), typeof(Repository<,>));
 			services.AddScoped<IProductService, ProductService>();
 			services.AddDbContext<DataContext>(options => 
 			{
@@ -66,9 +66,16 @@ namespace WebApi
 				c.SwaggerEndpoint("/swagger/v1/swagger.json", "Eshop service API V1");
 			});
 
+			app.UseDefaultFiles();
+			app.UseStaticFiles();
 			app.UseCors(x => x.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
 			app.UseHttpsRedirection();
-			app.UseMvc();
+			app.UseMvc(routes => {
+				routes.MapSpaFallbackRoute(
+					name: "spa-fallback",
+					defaults: new { controller = "Fallback", action = "Index" }
+				);
+			});
 		}
 	}
 }

@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Data
 {
-	public class Repository<T, Tid> : IRepository<T, Tid> where T : BaseEntity<Tid>
+	public class Repository<T, Tid> : IAsyncRepository<T, Tid> where T : BaseEntity<Tid>
 	{
 		private readonly DataContext context;
 		public Repository(DataContext context)

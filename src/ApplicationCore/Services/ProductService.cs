@@ -12,9 +12,9 @@ namespace ApplicationCore.Services
 {
 	public class ProductService : IProductService
 	{
-		private readonly IRepository<Product, int> repo;
+		private readonly IAsyncRepository<Product, int> repo;
 
-		public ProductService(IRepository<Product, int> repository)
+		public ProductService(IAsyncRepository<Product, int> repository)
 		{
 			this.repo = repository;
 		}
