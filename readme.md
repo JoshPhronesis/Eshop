@@ -7,7 +7,7 @@ Eshop is a simple app demonstrating key features of asp.net core used with angul
 
 ## Start Up Main Project
 
-- Open with  Visual Studio 2019 
+- Open with  Visual Studio 2019 (or C# version >= 7.1)
 - Set Start Up Project to WebApi
 - Debug Project in Debug/Release mdoe
 
