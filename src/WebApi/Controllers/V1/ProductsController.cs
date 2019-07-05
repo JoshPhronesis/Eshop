@@ -54,7 +54,7 @@ namespace WebApi.Controllers
 			var product = mapper.Map<Product>(productDto);
 			var prod = await productService.AddProductAsync(product);
 
-			return CreatedAtRoute("GetProduct", new { id = prod.Id }, productDto);
+			return CreatedAtRoute("GetProduct", new { id = prod?.Id }, productDto);
 		}
 
 		[HttpPut("{id}")]
@@ -86,7 +86,7 @@ namespace WebApi.Controllers
 
 			await productService.DeleteProductAsync(id);
 
-			return NoContent();
+			return Ok();
 		}
 	}
 }

@@ -808,7 +808,7 @@ var ProductEditComponent = /** @class */ (function () {
         this.productService = productService;
         this.router = router;
     }
-    ProductEditComponent.prototype.unloadNotificvation = function ($event) {
+    ProductEditComponent.prototype.unloadNotification = function ($event) {
         if (!this.isSaved) {
             $event.returnValue = true;
         }
@@ -837,7 +837,7 @@ var ProductEditComponent = /** @class */ (function () {
         __metadata("design:type", Function),
         __metadata("design:paramtypes", [Object]),
         __metadata("design:returntype", void 0)
-    ], ProductEditComponent.prototype, "unloadNotificvation", null);
+    ], ProductEditComponent.prototype, "unloadNotification", null);
     ProductEditComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-product-edit',
@@ -1061,7 +1061,7 @@ __webpack_require__.r(__webpack_exports__);
 // The list of file replacements can be found in `angular.json`.
 var environment = {
     production: false,
-    apiUrl: 'http://localhost:5000/api/v1/'
+    apiUrl: 'http://localhost:5001/api/v1/'
 };
 /*
  * In development mode, to ignore zone related error stack frames such as

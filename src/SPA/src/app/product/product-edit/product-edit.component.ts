@@ -14,9 +14,9 @@ export class ProductEditComponent implements OnInit {
 
   product: Product;
   isSaved: boolean;
-  
+
   @HostListener('window:beforeunload', ['$event'])
-  unloadNotificvation($event: any) {
+  unloadNotification($event: any) {
     if(!this.isSaved){
        $event.returnValue = true;
     }

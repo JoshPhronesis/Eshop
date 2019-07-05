@@ -13,7 +13,7 @@ namespace ApplicationCore.Helpers
 		public int PageSize { get; set; }
 		public int TotalCount { get; set; }
 
-		public PagedList(List<T> items, int count, int pageNumber, int pageSize)
+		private PagedList(List<T> items, int count, int pageNumber, int pageSize)
 		{
 			TotalCount = count;
 			PageSize = pageSize;
