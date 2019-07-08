@@ -271,12 +271,18 @@ var ProductService = /** @class */ (function () {
         this.http = http;
         this.baseUrl = src_environments_environment__WEBPACK_IMPORTED_MODULE_1__["environment"].apiUrl;
     }
-    ProductService.prototype.getProducts = function (page, itemsPerPage) {
+    ProductService.prototype.getProducts = function (page, itemsPerPage, userParams) {
         var paginatedResult = new _models_pagination__WEBPACK_IMPORTED_MODULE_3__["PaginatedResult"]();
         var params = new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpParams"]();
         if (page != null && itemsPerPage != null) {
             params = params.append('pageNumber', page);
             params = params.append('pageSize', itemsPerPage);
+        }
+        if (userParams != null) {
+            params = params.append('minPrice', userParams.minPrice);
+            params = params.append('maxPrice', userParams.maxPrice);
+            params = params.append('orderBy', userParams.orderBy);
+            params = params.append('searchTerm', userParams.searchTerm);
         }
         return this.http.get(this.baseUrl + 'products', { observe: 'response', params: params })
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (response) {
@@ -602,7 +608,7 @@ var NavComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".card:hover img {\r\n    -webkit-transform: scale(1.2, 1.2);\r\n            transform: scale(1.2, 1.2);\r\n    -webkit-transition-duration: 500ms;\r\n            transition-duration: 500ms;\r\n    -webkit-transition-timing-function: ease-out;\r\n            transition-timing-function: ease-out;\r\n    opacity: 0.7;\r\n    \r\n}\r\n\r\n.card img{\r\n    -webkit-transform: scale(1.0, 1.0);\r\n            transform: scale(1.0, 1.0);\r\n    -webkit-transition-duration: 500ms;\r\n            transition-duration: 500ms;\r\n    -webkit-transition-timing-function: ease-out;\r\n            transition-timing-function: ease-out;\r\n}\r\n\r\n.card-img-wrapper{\r\n    overflow: hidden;\r\n    position: relative;\r\n    width: 160px;\r\n    height: 160px;\r\n}\r\n\r\n.product-icons{\r\n    position: absolute;\r\n    bottom: -30%;\r\n    left:0;\r\n    right:0;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n    opacity: 0\r\n}\r\n\r\n.card-img-wrapper:hover .product-icons{\r\n    bottom: 0;\r\n    opacity: 1;\r\n}\r\n\r\n.animate{\r\n    -webkit-transition: all 0.3s ease-in-out;\r\n    transition: all 0.3s ease-in-out;\r\n}"
+module.exports = ".card:hover img {\r\n    -webkit-transform: scale(1.2, 1.2);\r\n            transform: scale(1.2, 1.2);\r\n    -webkit-transition-duration: 500ms;\r\n            transition-duration: 500ms;\r\n    -webkit-transition-timing-function: ease-out;\r\n            transition-timing-function: ease-out;\r\n    opacity: 0.7;\r\n    \r\n}\r\n\r\n.card img{\r\n    -webkit-transform: scale(1.0, 1.0);\r\n            transform: scale(1.0, 1.0);\r\n    -webkit-transition-duration: 500ms;\r\n            transition-duration: 500ms;\r\n    -webkit-transition-timing-function: ease-out;\r\n            transition-timing-function: ease-out;\r\n}\r\n\r\n.card-img-wrapper{\r\n    overflow: hidden;\r\n    position: relative;\r\n    width: 160px;\r\n    height: 160px;\r\n}\r\n\r\n.product-icons{\r\n    position: absolute;\r\n    bottom: -30%;\r\n    left:0;\r\n    right:0;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n    opacity: 0\r\n}\r\n\r\n.card-img-wrapper:hover .product-icons{\r\n    bottom: 0;\r\n    opacity: 1;\r\n}\r\n\r\n.animate{\r\n    -webkit-transition: all 0.3s ease-in-out;\r\n    transition: all 0.3s ease-in-out;\r\n}\r\n\r\n"
 
 /***/ }),
 
@@ -613,7 +619,7 @@ module.exports = ".card:hover img {\r\n    -webkit-transform: scale(1.2, 1.2);\r
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"card mb-4\">\n  <div class=\"card-img-wrapper\">\n    <img src=\"{{product.imageUri}}\" alt=\"{{product.name}}\" class=\"card-img-top\">\n    <ul class=\"list-inline product-icons animate text-center\">\n      <li class=\"list-inline-item\">\n        <button class=\"btn btn-primary\" [routerLink]=\"['/products', product.id]\"><i class=\"fa fa-eye\"></i></button>\n      </li>\n      <li class=\"list-inline-item\">\n        <button class=\"btn btn-primary\"><i class=\"fa fa-edit\" [routerLink]=\"['/products/edit', product.id]\"></i></button>\n      </li>\n      <li class=\"list-inline-item\">\n        <button class=\"btn btn-primary\"><i class=\"fa fa-trash\" [routerLink]=\"['/products']\" (click)=deleteProduct(product.id)></i></button>\n      </li>\n    </ul>\n  </div>\n  <div class=\"card-body p-1\">\n    <b><h6 class=\"card-title txt-center mb-1\">\n        {{product.name}}</h6></b>\n  </div>\n</div>"
+module.exports = "<div class=\"card mb-4\">\n  <div class=\"card-img-wrapper\">\n    <img src=\"{{product.imageUri}}\" alt=\"{{product.name}}\" class=\"card-img-top\">\n    <ul class=\"list-inline product-icons animate text-center\">\n      <li class=\"list-inline-item\">\n        <button class=\"btn btn-primary\" [routerLink]=\"['/products', product.id]\"><i class=\"fa fa-eye\"></i></button>\n      </li>\n      <li class=\"list-inline-item\">\n        <button class=\"btn btn-primary\"><i class=\"fa fa-edit\" [routerLink]=\"['/products/edit', product.id]\"></i></button>\n      </li>\n      <li class=\"list-inline-item\">\n        <button class=\"btn btn-primary\"><i class=\"fa fa-trash\" [routerLink]=\"['/products']\" (click)=deleteProduct(product.id)></i></button>\n      </li>\n    </ul>\n  </div>\n  <div class=\"card-body p-1\">\n    <h6 class=\"card-title txt-center mb-1\">\n        {{product.name}}</h6><i>${{product.price}}</i>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -648,6 +654,13 @@ var ProductCardComponent = /** @class */ (function () {
         this.baseUrl = src_environments_environment__WEBPACK_IMPORTED_MODULE_1__["environment"].apiUrl;
     }
     ProductCardComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.products.forEach(function (element) {
+            element.price = Number(_this.getVal(element.price));
+        });
+    };
+    ProductCardComponent.prototype.getVal = function (number) {
+        return (Math.round(number * 100) / 100).toFixed(2);
     };
     ProductCardComponent.prototype.deleteProduct = function (id) {
         var _this = this;
@@ -871,7 +884,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"text-center mt-3\">\r\n  <h4>Total Products - {{pagination.totalItems}} available</h4>\r\n</div>\r\n\r\n<div class=\"container mt-3\">\r\n  <div class=\"row\">\r\n    <div *ngFor=\"let product of products\"  class=\"col-sm-6 col-md-4 col-lg-4 col-xl-2\">\r\n      <app-product-card [products]=\"products\" [product]=\"product\"></app-product-card>\r\n    </div>\r\n  </div>\r\n</div>\r\n  \r\n<div class=\"d-flex justify-content-center\">\r\n  <pagination [boundaryLinks]=\"true\" \r\n              [totalItems]=\"pagination.totalItems\"\r\n              [itemsPerPage]=\"pagination.itemsPerPage\"\r\n              [(ngModel)]=\"pagination.currentPage\"\r\n              (pageChanged)=\"pageChanged($event)\"\r\n            previousText=\"&lsaquo;\" nextText=\"&rsaquo;\" firstText=\"&laquo;\" lastText=\"&raquo;\">\r\n  </pagination>\r\n</div>"
+module.exports = "<div class=\"text-center mt-3\">\r\n  <h4>Total Products - {{pagination.totalItems}} available</h4>\r\n</div>\r\n\r\n<div class=\"container mt-3\">\r\n  <form class=\"form-inline\" #form=\"ngForm\" (ngSubmit)=\"loadProducts()\" novalidate>\r\n      <div class=\"form-group\">\r\n          <label for=\"minPrice\">Price: From</label>\r\n          <input type=\"number\" class=\"form-control ml-1\" style=\"width: 70px\" id=\"minPrice\" name=\"minPrice\" [(ngModel)]=\"userParams.minPrice\">\r\n      </div>\r\n  \r\n      <div class=\"form-group px-2\">\r\n          <label for=\"maxPrice\">To</label>\r\n          <input type=\"number\" class=\"form-control ml-1\" style=\"width: 100px\" id=\"maxPrice\" name=\"maxPrice\"  [(ngModel)]=\"userParams.maxPrice\">\r\n      </div>\r\n  \r\n      <div class=\"form-group px-2\">\r\n        <label for=\"searchTerm\">Search: </label>\r\n        <input type=\"text\" class=\"form-control\" id=\"searchTerm\" name=\"searchTerm\"  [(ngModel)]=\"userParams.searchTerm\" placeholder=\"search by product name\">\r\n      </div>\r\n\r\n      <button type=\"submit\" class=\"btn btn-primary\" style=\"margin-left:10px\">Apply Filters</button>\r\n      <button type=\"button\" class=\"btn btn-info\" (click)=\"resetFilters()\" style=\"margin-left:10px\">Reset Filter</button>\r\n  \r\n      <div class=\"col\">\r\n          <div class=\"btn-group float-right\">\r\n            <button type=\"button\" name=\"orderBy\" class=\"btn btn-primary\" btnRadio=\"leastExpensive\" (click)=\"loadProducts('leastExpensive')\">Least Expensive</button>\r\n            <button type=\"button\" name=\"orderBy\" class=\"btn btn-primary\" btnRadio=\"mostExpensive\" (click)=\"loadProducts('mostExpensive')\">Most Expensive</button>\r\n          </div>\r\n      </div>\r\n\r\n  </form>\r\n  <br>\r\n</div>\r\n\r\n<div class=\"container mt-3\">\r\n  <div class=\"row\">\r\n    <div *ngFor=\"let product of products\"  class=\"col-sm-6 col-md-4 col-lg-4 col-xl-2\">\r\n      <app-product-card [products]=\"products\" [product]=\"product\"></app-product-card>\r\n    </div>\r\n  </div>\r\n</div>\r\n  \r\n<div class=\"d-flex justify-content-center\">\r\n  <pagination [boundaryLinks]=\"true\" \r\n              [totalItems]=\"pagination.totalItems\"\r\n              [itemsPerPage]=\"pagination.itemsPerPage\"\r\n              [(ngModel)]=\"pagination.currentPage\"\r\n              (pageChanged)=\"pageChanged($event)\"\r\n            previousText=\"&lsaquo;\" nextText=\"&rsaquo;\" firstText=\"&laquo;\" lastText=\"&raquo;\">\r\n  </pagination>\r\n</div>"
 
 /***/ }),
 
@@ -907,24 +920,36 @@ var ProductListComponent = /** @class */ (function () {
         this.productService = productService;
         this.route = route;
         this.baseUrl = src_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].apiUrl;
+        this.userParams = {};
     }
     ProductListComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.route.data.subscribe(function (data) {
             _this.products = data['products'].result;
             _this.pagination = data['products'].pagination;
+            _this.userParams.orderBy = 'leastExpensive';
+            _this.userParams.searchTerm = '';
+            _this.resetFilters();
         });
+    };
+    ProductListComponent.prototype.resetFilters = function () {
+        this.userParams.minPrice = 1;
+        this.userParams.maxPrice = 100000;
+        this.userParams.searchTerm = '';
+        this.loadProducts(this.userParams.orderBy);
     };
     ProductListComponent.prototype.pageChanged = function (event) {
         this.pagination.currentPage = event.page;
-        this.loadProducts();
+        this.loadProducts(this.userParams.orderBy);
     };
-    ProductListComponent.prototype.loadProducts = function () {
+    ProductListComponent.prototype.loadProducts = function (orderBy) {
         var _this = this;
-        this.productService.getProducts(this.pagination.currentPage, this.pagination.itemsPerPage)
+        this.userParams.orderBy = orderBy;
+        this.productService.getProducts(this.pagination.currentPage, this.pagination.itemsPerPage, this.userParams)
             .subscribe(function (res) {
             _this.products = res.result;
             _this.pagination = res.pagination;
+            console.log(_this.products);
         }, function (error) {
             console.log(error);
         });

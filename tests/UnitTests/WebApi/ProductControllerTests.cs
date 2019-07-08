@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 using WebApi.Controllers;
 using WebApi.DTOs;
 using WebApi.Helpers;
+using MockQueryable;
 
 namespace UnitTests.WebApi
 {
@@ -21,7 +22,7 @@ namespace UnitTests.WebApi
 	{
 		private Mock<IAsyncRepository<Product, int>> mockRepo;
 		private Mock<IProductService> productService;
-		private Mock<PaginationParams> paginationParams;
+		private Mock<UserParams> paginationParams;
 
 		ProductsController controller;
 		IEnumerable<Product> products;
@@ -38,7 +39,7 @@ namespace UnitTests.WebApi
 			var mapper = mockMapper.CreateMapper();
 			productService = new Mock<IProductService>();
 
-			paginationParams = new Mock<PaginationParams>();
+			paginationParams = new Mock<UserParams>();
 			controller = new ProductsController(mapper, productService.Object);
 
 			products = new List<Product>()
@@ -48,7 +49,7 @@ namespace UnitTests.WebApi
 				new Product() { Id = 3, Name = "Motoroller", Price= 3000, Description="good motoroller" }
 			};
 
-			pagedProducts = PagedList<Product>.Create(products.AsQueryable(), 1, 2);
+			pagedProducts = PagedList<Product>.CreateAsync(products.AsQueryable(), 1, 2, nameof(Product.Price), "mostExpensive");
 
 		}
 
@@ -58,16 +59,20 @@ namespace UnitTests.WebApi
 			//arrange
 			paginationParams.Object.PageSize = 2;
 			paginationParams.Object.PageNumber = 1;
-			productService.Setup(x => x.GetPagedProducts(paginationParams.Object.PageNumber, paginationParams.Object.PageSize))
-						  .Returns(pagedProducts);
+			paginationParams.Object.MaxPrice = 100000;
+			paginationParams.Object.MinPrice = 1;
+			productService.Setup(x => x.GetPagedProducts(paginationParams.Object.PageNumber, paginationParams.Object.PageSize,
+											paginationParams.Object.MinPrice, paginationParams.Object.MaxPrice, paginationParams.Object.OrderBy, paginationParams.Object.SearchTerm))
+						  .Returns(Task.FromResult(pagedProducts));
 
 			//act
 			var response = controller.Products(paginationParams.Object) as ObjectResult;
-			var value = (List<ProductDto>) response.Value;
+			var value = (List<ProductDto>)response.Value;
 
 			//assert
 			Assert.IsNotNull(value);
 			Assert.AreEqual(2, value.Count);
+			Assert.AreEqual(value[0].Price, pagedProducts.Max(p => p.Price));
 		}
 
 		[TestMethod]
@@ -142,7 +147,7 @@ namespace UnitTests.WebApi
 			int id = 1;
 			var prodToRemoveIndex = products.ToList().FindIndex(p => p.Id == id);
 			productService.Setup(x => x.GetProductAsync(id)).Returns(Task.FromResult(products.FirstOrDefault(p => p.Id == id)));
-			productService.Setup(x => x.DeleteProductAsync(id)).Callback(() => { products = products.Where(p => p.Id != id).ToList();});
+			productService.Setup(x => x.DeleteProductAsync(id)).Callback(() => { products = products.Where(p => p.Id != id);});
 
 			// Act
 			IActionResult actionResult = controller.Delete(id).Result;

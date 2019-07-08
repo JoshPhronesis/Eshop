@@ -18,6 +18,13 @@ export class ProductCardComponent implements OnInit {
   constructor(private http: HttpClient) { }
 
   ngOnInit() {
+    this.products.forEach(element => {
+      element.price = Number(this.getVal(element.price));
+    });
+  }
+
+  getVal(number){
+    return (Math.round(number*100)/ 100).toFixed(2);
   }
 
   deleteProduct(id: number) {

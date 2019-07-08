@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ApplicationCore.Extensions;
+using Microsoft.EntityFrameworkCore;
+using ApplicationCore.Enums;
 
 namespace ApplicationCore.Helpers
 {
@@ -22,10 +25,20 @@ namespace ApplicationCore.Helpers
 			this.AddRange(items);
 		}
 
-		public static PagedList<T> Create(IQueryable<T> source, int pageNumber, int pageSize)
+		public static PagedList<T> CreateAsync(IQueryable<T> source, int pageNumber, int pageSize, 
+				string sortProperty, string orderBy)
 		{
 			var count = source.Count();
+			if (!string.IsNullOrEmpty(sortProperty))
+			{
+				if (orderBy?.ToLower() == nameof(OrderByEnum.MostExpensive).ToLower())
+					source = source.OrderByDescending(sortProperty);
+				else
+					source = source.OrderBy(sortProperty);
+			}
+
 			var items = source.Skip((pageNumber - 1) * pageSize).Take(pageSize).ToList();
+
 			return new PagedList<T>(items, count, pageNumber, pageSize);
 		}
 	}

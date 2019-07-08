@@ -12,12 +12,6 @@ namespace Infrastructure.Data
 {
 	public class ProductSeed
 	{
-		private readonly DataContext context;
-		public ProductSeed(DataContext context)
-		{
-			this.context = context;
-		}
-
 		public async static Task SeedAsync(DataContext context, ILoggerFactory loggerFactory)
 		{
 			try

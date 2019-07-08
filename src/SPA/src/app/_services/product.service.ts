@@ -15,7 +15,7 @@ export class ProductService {
 
   constructor(private http: HttpClient) { }
 
-  getProducts(page?, itemsPerPage?): Observable<PaginatedResult<Product[]>>{
+  getProducts(page?, itemsPerPage?, userParams?): Observable<PaginatedResult<Product[]>>{
     const paginatedResult: PaginatedResult<Product[]> = new PaginatedResult<Product[]>();
     let params = new HttpParams();
 
@@ -23,6 +23,14 @@ export class ProductService {
       params = params.append('pageNumber', page);
       params = params.append('pageSize', itemsPerPage);
     }
+
+    if (userParams != null) {
+      params = params.append('minPrice', userParams.minPrice);
+      params = params.append('maxPrice', userParams.maxPrice);
+      params = params.append('orderBy', userParams.orderBy);
+      params = params.append('searchTerm', userParams.searchTerm);
+    }
+
     return this.http.get<Product[]>(this.baseUrl + 'products', {observe: 'response', params})
     .pipe(
       map(response => {

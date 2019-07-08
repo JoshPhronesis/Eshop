@@ -45,9 +45,9 @@ namespace Infrastructure.Data
 			return await context.Set<T>().FindAsync(id);
 		}
 
-		public IQueryable<T> GetAllAsQueryable()
+		public async Task<IQueryable<T>> GetAllAsQueryable()
 		{
-			return context.Set<T>().AsQueryable();
+			return await Task.FromResult(context.Set<T>().AsQueryable());
 		}
 
 		public async Task UpdateAsync(T entity)

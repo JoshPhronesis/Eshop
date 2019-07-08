@@ -15,6 +15,6 @@ namespace ApplicationCore.Interfaces
 		Task DeleteAsync(T entity);
 		Task UpdateAsync(T entity);
 		Task<int> CountAsync(T entity);
-		IQueryable<T> GetAllAsQueryable();
+		Task<IQueryable<T>> GetAllAsQueryable();
 	}
 }

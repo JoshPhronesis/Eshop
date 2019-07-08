@@ -40,10 +40,14 @@ namespace ApplicationCore.Services
 			return await repo.GetByIdAsync(productId);
 		}
 
-		public PagedList<Product> GetPagedProducts(int pageNumber, int pageSize)
+		public Task<PagedList<Product>> GetPagedProducts(int pageNumber, int pageSize, decimal minPrice, decimal MaxPrice, string orderBy, string searchTerm)
 		{
-			var query = repo.GetAllAsQueryable(); 
-			return PagedList<Product>.Create(query, pageNumber, pageSize);
+			var query = repo.GetAllAsQueryable().Result.Where(p => p.Price > minPrice && p.Price < MaxPrice);
+			if (!string.IsNullOrEmpty(searchTerm))
+			{
+				query = query.Where(p => p.Name.ToLower().Contains(searchTerm.ToLower()));
+			}
+			return Task.FromResult(PagedList<Product>.CreateAsync(query, pageNumber, pageSize, nameof(Product.Price), orderBy));
 		}
 
 		public async Task UpdateProductAsync(Product product)
