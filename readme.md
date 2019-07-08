@@ -1,13 +1,14 @@
 # Eshop
 
-Eshop is a simple app demonstrating key features of asp.net core used with angular.
+Eshop is a simple app demonstrating key features of asp.net core used with angular. Developed with a mixture of clean DDD arhitecture.
 
 - FE - Angular SPA
 - BE - Asp.net core
 
+![Screenshot](screenshot/homepage.png)
 ## Start Up Main Project
 
-- Open with  Visual Studio 2019 (or C# version >= 7.1)
+- Open with  Visual Studio 2019 (or C# version >= 7.1), .net core >= 2.0
 - Set Start Up Project to WebApi
 - Debug Project in Debug/Release mdoe
 
@@ -15,7 +16,7 @@ Eshop is a simple app demonstrating key features of asp.net core used with angul
 - SPA - http://localhost:5001/
 - Swagger - http://localhost:5001/swagger/index.html
 
-## Start Up Unit Tests
+## Start-up Unit Tests
 - Open UnitTests project
 - Open test explorer on Visual Studio
 - Click run all/debug all
