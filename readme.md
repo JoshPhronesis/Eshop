@@ -1,6 +1,6 @@
 # Eshop
 
-Eshop is a simple app demonstrating key features of asp.net core used with angular. Developed with a mixture of clean DDD arhitecture.
+Eshop is a simple app demonstrating key features of asp.net core used with angular. Developed following clean DDD arhitecture. It comprises of 4 layers; ApplicationCore, Infrastructure, WebApi and SPA.
 
 - FE - Angular SPA
 - BE - Asp.net core
