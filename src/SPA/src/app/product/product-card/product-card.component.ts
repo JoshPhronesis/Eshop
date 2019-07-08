@@ -19,7 +19,7 @@ export class ProductCardComponent implements OnInit {
 
   ngOnInit() {
     this.products.forEach(element => {
-      element.price = Number(this.getVal(element.price));
+      element.price = this.getVal(element.price);
     });
   }
 

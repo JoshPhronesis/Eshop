@@ -656,7 +656,7 @@ var ProductCardComponent = /** @class */ (function () {
     ProductCardComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.products.forEach(function (element) {
-            element.price = Number(_this.getVal(element.price));
+            element.price = _this.getVal(element.price);
         });
     };
     ProductCardComponent.prototype.getVal = function (number) {
